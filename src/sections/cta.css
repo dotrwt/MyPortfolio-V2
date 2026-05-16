@@ -1,0 +1,125 @@
+.cta-section {
+  padding: 100px 0;
+  background-color: transparent; /* Let the grid show through */
+  position: relative;
+}
+
+.cta-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cta-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.cta-header-text {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.cta-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--border);
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.cta-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  max-width: 900px;
+}
+
+.cta-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 40px;
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: var(--transition-smooth);
+  text-transform: lowercase;
+}
+
+.cta-button:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.cta-arrow {
+  font-size: 1.2rem;
+}
+
+/* Decorative target icon */
+.cta-decorative-target {
+  position: absolute;
+  right: 12.5%; /* Positioned on the 7th grid line (1/8 * 100%) */
+  top: 70%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-decorative-target::before,
+.cta-decorative-target::after {
+  content: '';
+  position: absolute;
+  background-color: var(--border);
+}
+
+.cta-decorative-target::before {
+  width: 100%;
+  height: 1px;
+}
+
+.cta-decorative-target::after {
+  width: 1px;
+  height: 100%;
+}
+
+.target-inner {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .cta-headline {
+    font-size: 2rem;
+  }
+  
+  .cta-decorative-target {
+    display: none;
+  }
+}
