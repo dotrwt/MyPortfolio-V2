@@ -8,6 +8,8 @@ const GalleryPage = lazy(() => import('./pages/gallery/GalleryPage'));
 const ContactPage = lazy(() => import('./pages/contact/ContactPage'));
 const ProjectsPage = lazy(() => import('./pages/projects/ProjectsPage'));
 
+const NotFoundPage = lazy(() => import('./pages/notFound/notfoundPage'));
+
 function PageLoader() {
   return (
     <div
@@ -44,6 +46,7 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>
       </SmoothScroll>

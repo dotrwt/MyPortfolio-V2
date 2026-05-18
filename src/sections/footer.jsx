@@ -14,7 +14,7 @@ const Footer = () => {
 
         <div className="footer-headline">
           <h1>Lets design</h1>
-          <h1 className="text-outline">incredible work together.</h1>
+          <h1 className="text-outline-footer">incredible work together.</h1>
         </div>
 
         <div className="footer-contact-grid">

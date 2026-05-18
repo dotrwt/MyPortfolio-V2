@@ -44,10 +44,8 @@
   letter-spacing: -0.02em;
 }
 
-.text-outline {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-muted);
-  opacity: 0.5;
+.text-outline-footer {
+  color: #828282;
 }
 
 .footer-contact-grid {
@@ -169,12 +167,13 @@
 }
 
 @media (max-width: 992px) {
+
   .footer-contact-grid,
   .footer-links-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .copyright-col {
     justify-content: flex-start;
   }
