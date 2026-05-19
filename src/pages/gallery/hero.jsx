@@ -29,16 +29,6 @@ const GalleryHero = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Description Row */}
-                <div className="gallery-hero-description-wrapper slide-up">
-                    <p className="gallery-hero-description">
-                        i capture light, geometry, and<br />
-                        raw organic moments through<br />
-                        visual exploration and<br />
-                        thoughtful compositions
-                    </p>
-                </div>
             </div>
         </section>
     );

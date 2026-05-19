@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import GridBackground from '../../components/GridBackground';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Navbar from '../../sections/navbar';
+import Footer from '../../sections/footer';
 import { FaTwitter, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
