@@ -164,21 +164,6 @@
   margin-bottom: -5vw;
   letter-spacing: -0.05em;
   opacity: 1;
-  position: relative;
-}
-
-.footer-display-text::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50%;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  pointer-events: none;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
-  z-index: 1;
 }
 
 @media (max-width: 992px) {
