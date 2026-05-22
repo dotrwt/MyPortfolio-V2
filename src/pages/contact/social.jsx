@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaInstagram, FaGithub, FaPinterest } from 'react-icons/fa';
+import { FaXTwitter, FaInstagram, FaGithub, FaPinterest } from 'react-icons/fa6';
 import { CiLinkedin } from "react-icons/ci";
 import './contact.css';
 
@@ -10,7 +10,7 @@ const Socials = () => {
       name: 'twitter',
       handle: '@HarshvardhanRaw',
       url: 'https://twitter.com/HarshvardhanRaw',
-      icon: <FaTwitter size={20} />
+      icon: <FaXTwitter size={20} />
     },
     {
       id: 'instagram',

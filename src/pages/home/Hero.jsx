@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './home.css';
 
+const focusAreas = [
+  'digital stories', 
+  'software interfaces', 
+  'interactive experiences', 
+  'cinematic interfaces'
+];
+
 const Hero = () => {
+  const [focusIndex, setFocusIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFocusIndex((prev) => (prev + 1) % focusAreas.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="hero-section">
       <div className="hero-grid">
@@ -21,7 +36,9 @@ const Hero = () => {
           <h1 className="hero-title">
             <span className="hero-title-line">a creative developer</span>
             <span className="hero-title-line">partner with focus on</span>
-            <span className="hero-title-line">digital stories</span>
+            <span className="hero-title-line">
+              <span key={focusIndex} className="hero-changing-word">{focusAreas[focusIndex]}</span>
+            </span>
           </h1>
         </div>
 

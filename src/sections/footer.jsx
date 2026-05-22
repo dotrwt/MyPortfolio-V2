@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaXTwitter, FaInstagram, FaDribbble, FaBehance, FaLinkedinIn } from 'react-icons/fa6';
+import { FaXTwitter, FaInstagram, FaGithub, FaPinterest, FaLinkedinIn } from 'react-icons/fa6';
 import './footer.css';
 
+const changingWords = ['design', 'create', 'build'];
+
 const Footer = () => {
+  const [wordIndex, setWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((prev) => (prev + 1) % changingWords.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -13,7 +23,9 @@ const Footer = () => {
         </div>
 
         <div className="footer-headline">
-          <h1>Lets design</h1>
+          <h1>
+            Lets <span key={wordIndex} className="changing-word">{changingWords[wordIndex]}</span>
+          </h1>
           <h1 className="text-outline-footer">incredible work together.</h1>
         </div>
 
@@ -29,11 +41,11 @@ const Footer = () => {
           <div className="contact-col">
             <span className="label">Social</span>
             <div className="social-icons">
-              <a href="#" className="social-icon"><FaXTwitter /></a>
-              <a href="#" className="social-icon"><FaInstagram /></a>
-              <a href="#" className="social-icon"><FaDribbble /></a>
-              <a href="#" className="social-icon"><FaBehance /></a>
-              <a href="#" className="social-icon"><FaLinkedinIn /></a>
+              <a href="https://x.com/HarshvardhanRaw" className="social-icon" target="_blank"><FaXTwitter size={20} /></a>
+              <a href="https://www.instagram.com/rawwithharsh" className="social-icon" target="_blank"><FaInstagram size={20} /></a>
+              <a href="https://www.linkedin.com/in/harshvardhan-rawat" className="social-icon" target="_blank"><FaLinkedinIn size={20} /></a>
+              <a href="https://github.com/dotrwt" className="social-icon" target="_blank"><FaGithub size={20} /></a>
+              <a href="https://in.pinterest.com/dotrwtt" className="social-icon" target="_blank"><FaPinterest size={20} /></a>
             </div>
           </div>
         </div>
@@ -45,20 +57,13 @@ const Footer = () => {
             <span className="label">Menu</span>
             <div className="links-group">
               <div className="links-subgroup">
-                <Link to="/projects">Work</Link>
-                <Link to="/pricing">Pricing</Link>
+                <Link to="/">Home</Link>
+                <Link to="/project">Work</Link>
               </div>
               <div className="links-subgroup">
-                <Link to="/services">Services</Link>
-                <Link to="/blog">Blog</Link>
+                <Link to="/about">About</Link>
+                <Link to="/gallery">Gallery</Link>
               </div>
-            </div>
-          </div>
-          <div className="links-col">
-            <span className="label">Legal</span>
-            <div className="links-subgroup">
-              <Link to="/terms">Terms of service</Link>
-              <Link to="/privacy">Privacy Policy</Link>
             </div>
           </div>
           <div className="copyright-col">
