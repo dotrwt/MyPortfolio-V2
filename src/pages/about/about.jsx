@@ -1,4 +1,5 @@
 import React from 'react';
+import { optimizeCloudinaryUrl } from '../../utils/cloudinary';
 import './about.css';
 
 const AboutSection = () => {
@@ -6,7 +7,13 @@ const AboutSection = () => {
     <section className="about-details-section">
       <div className="about-details-container">
         <div className="about-photo-wrapper">
-          <div className="about-portrait-placeholder"></div>
+          <div className="about-portrait-placeholder">
+            <img
+              src={optimizeCloudinaryUrl("https://res.cloudinary.com/dph28qrrx/image/upload/v1779475595/06_1_itqfzo.jpg")}
+              alt="Profile-Picture"
+              loading="lazy" 
+            />
+          </div>
         </div>
 
         <div className="about-text-content">

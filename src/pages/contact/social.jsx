@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaTwitter, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaGithub, FaPinterest } from 'react-icons/fa';
+import { CiLinkedin } from "react-icons/ci";
 import './contact.css';
 
 const Socials = () => {
@@ -7,42 +8,50 @@ const Socials = () => {
     {
       id: 'twitter',
       name: 'twitter',
-      handle: '@stfnco',
-      url: 'https://twitter.com/stfnco',
+      handle: '@HarshvardhanRaw',
+      url: 'https://twitter.com/HarshvardhanRaw',
       icon: <FaTwitter size={20} />
     },
     {
       id: 'instagram',
       name: 'instagram',
-      handle: '@stfnco',
-      url: 'https://instagram.com/stfnco',
+      handle: '@rawwithharsh',
+      url: 'https://instagram.com/rawwithharsh',
       icon: <FaInstagram size={20} />
     },
     {
-      id: 'tiktok',
-      name: 'tiktok',
-      handle: '@stfnco',
-      url: 'https://tiktok.com/@stfnco',
-      icon: <FaTiktok size={20} />
+      id: 'linkedin',
+      name: 'linkedin',
+      handle: '@Harshvardhan-Rawat',
+      url: 'https://linkedin.com/in/Harshvardhan-Rawat',
+      icon: <CiLinkedin size={25} />
     },
     {
-      id: 'youtube',
-      name: 'youtube',
-      handle: '@stfnco',
-      url: 'https://youtube.com',
-      icon: <FaYoutube size={20} />
+      id: 'github',
+      name: 'GitHub',
+      handle: '@dotrwt',
+      url: 'https://github.com/dotrwt',
+      icon: <FaGithub size={20} />
+    },
+    {
+      id: 'pinterest',
+      name: 'pintrest',
+      handle: '@dotrwtt',
+      url: 'https://pintrest.com/dotrwtt',
+      icon: <FaPinterest size={20} />
     }
+
   ];
 
   return (
     <div className="contact-social-grid">
       <div className="socials-list">
         {socialList.map((item) => (
-          <a 
-            key={item.id} 
-            href={item.url} 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            key={item.id}
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="social-item-row"
           >
             {/* Left Box: Icon and Details */}

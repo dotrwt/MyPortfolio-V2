@@ -2,41 +2,65 @@ import React from 'react';
 import GalleryCard from '../../components/GalleryCard';
 import './gallery.css';
 
-// Import local photography assets
-import imgNopal from '../../assets/gallery_nopal.png';
-import imgTierraViva from '../../assets/gallery_tierraviva.png';
-import imgFabric from '../../assets/gallery_fabric.png';
-import imgStone from '../../assets/gallery_stone.png';
-
 const galleryItems = [
   {
     id: 1,
-    image: imgNopal
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779477363/IMG_0603_2_kl72bc.jpg'
   },
   {
     id: 2,
-    image: imgTierraViva
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475609/IMG_0761_yrqqx8.jpg'
   },
   {
     id: 3,
-    image: imgFabric
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475604/IMG_9644_bzsupp.jpg'
   },
   {
     id: 4,
-    image: imgStone
-  }
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476610/IMG_0943_mlplua.jpg'
+  },
+  {
+    id: 5,
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476596/IMG_0903_yfmby3.jpg'
+  },
+  {
+    id: 6,
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475618/IMG_9403_qka83x.jpg'
+  },
+  {
+    id: 7,
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475618/IMG_9403_qka83x.jpg'
+  },
+  {
+    id: 8,
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475618/IMG_9403_qka83x.jpg'
+  },
+  {
+    id: 9,
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476602/IMG_1853_gt1paj.jpg'
+  },
+  {
+    id: 10,
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476599/IMG-20260414-WA0182_lurk9s.jpg'
+  },
+
+
 ];
 
 const GalleryGrid = () => {
   return (
     <section className="gallery-grid-section">
       <div className="gallery-main-grid">
-        {galleryItems.map((item) => (
-          <GalleryCard
-            key={item.id}
-            image={item.image}
-          />
-        ))}
+        {galleryItems.map((item, index) => {
+          const isLandscapeRow = index % 5 === 3 || index % 5 === 4;
+          return (
+            <GalleryCard
+              key={item.id}
+              image={item.image}
+              className={isLandscapeRow ? 'landscape' : 'portrait'}
+            />
+          );
+        })}
       </div>
     </section>
   );
