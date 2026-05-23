@@ -4,6 +4,7 @@ import Footer from '../../sections/footer';
 import HeroSection from './hero';
 import ProjectsGallery from './projectsGallery';
 import Logos from './logos';
+import CTA from '../../sections/cta';
 import GridBackground from '../../components/GridBackground';
 
 const ProjectsPage = () => {
@@ -17,7 +18,7 @@ const ProjectsPage = () => {
         <Logos />
         <ProjectsGallery />
       </main>
-
+      <CTA />
       <Footer />
     </>
   );

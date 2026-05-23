@@ -18,8 +18,8 @@ const AboutPage = () => {
         <AboutSection />
         <Experience />
         <Stack />
-        <CTA />
       </main>
+      <CTA />
       <Footer />
     </>
   );

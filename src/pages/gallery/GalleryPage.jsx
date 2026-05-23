@@ -15,7 +15,6 @@ export default function GalleryPage() {
         <Hero />
         <GalleryGrid />
       </main>
-
       <Footer />
     </>
   );

@@ -44,12 +44,12 @@ const Navbar = () => {
           <Link to="/gallery" className="nav-link">gallery</Link>
           <Link to="/contact" className="nav-link">contact</Link>
         </div>
+        {/* Scroll Progress Indicator Line */}
+        <div 
+          ref={indicatorRef}
+          className="navbar-scroll-indicator" 
+        />
       </div>
-      {/* Scroll Progress Indicator Line */}
-      <div 
-        ref={indicatorRef}
-        className="navbar-scroll-indicator" 
-      />
     </nav>
   );
 };
