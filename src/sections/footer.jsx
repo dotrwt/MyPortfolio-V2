@@ -15,6 +15,8 @@ const Footer = () => {
     }, 2000);
     return () => clearInterval(interval);
   }, []);
+
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -37,7 +39,7 @@ const Footer = () => {
           </div>
           <div className="contact-col">
             <span className="label">Call Me</span>
-            <a href="#" className="contact-link">Book Now</a>
+            <a href="/contact" className="contact-link">Book Now</a>
           </div>
           <div className="contact-col">
             <span className="label">Social</span>

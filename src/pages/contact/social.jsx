@@ -8,8 +8,8 @@ const Socials = () => {
     {
       id: 'twitter',
       name: 'twitter',
-      handle: '@HarshvardhanRaw',
-      url: 'https://twitter.com/HarshvardhanRaw',
+      handle: '@dotrwt',
+      url: 'https://twitter.com/dotrwt',
       icon: <FaXTwitter size={20} />
     },
     {

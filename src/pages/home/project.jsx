@@ -10,12 +10,12 @@ import projectTablet from '../../assets/project_tablet.png';
 const projects = [
   {
     id: 1,
-    category: 'Art Direction',
+    category: 'UniMap',
     image: projectAbc,
     description: "I provide creative leadership to ensure your brand's visuals, photography, and campaigns align beautifully with your identity.",
-    techStack: ['Figma', 'Illustrator', 'Cinema 4D'],
-    projectUrl: 'https://example.com/art-direction',
-    githubUrl: 'https://github.com'
+    techStack: ['React', 'Figma'],
+    projectUrl: 'https://unimap-lemon.vercel.app/',
+    githubUrl: 'https://github.com/dotrwt/unimap'
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const ProjectSection = () => {
               selected<br />projects
             </h2>
             <p className="projects-description">
-              A curated collection of digital experiences designed to be smooth, reliable, and highly customizable. Scroll to explore the featured work.
+              A curated selection of projects focused on thoughtful design, seamless experiences, and purposeful development.
             </p>
             <div className="projects-btn-group">
               <BorderGlow borderRadius={0} backgroundColor="#000" glowRadius={30} className="btn-glow-wrapper">

@@ -15,15 +15,15 @@ const CTA = () => {
 
         <div className="cta-content">
           <h2 className="cta-headline">
-            i'm open for freelance projects,<br />
+            i'm open for projects and collaborations,<br />
             feel free to email me to see how<br />
             can we collaborate
           </h2>
-          
+
           <div className="cta-button-container">
             <Magnet magnetStrength={3} padding={50}>
               <BorderGlow borderRadius={0} backgroundColor="#000" glowRadius={30} className="cta-glow-wrapper">
-                <a href="mailto:harsh.r5983@gmail.com" className="cta-button">
+                <a href="/contact" className="cta-button">
                   <span>contact me</span>
                   <FiArrowUpRight className="cta-arrow" />
                 </a>
