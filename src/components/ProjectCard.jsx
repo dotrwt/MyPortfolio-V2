@@ -1,4 +1,5 @@
 import React from 'react';
+import { optimizeCloudinaryUrl } from '../utils/cloudinary';
 import '../pages/projects/project.css';
 
 const ProjectCard = ({ 
@@ -12,11 +13,23 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="project-card">
-      {/* Background Image */}
+      {/* Background Image (Blurred) */}
       <div 
-        className="project-card-bg" 
-        style={{ backgroundImage: `url(${image})` }}
+        className="project-card-bg-blurred" 
+        style={{ backgroundImage: `url(${optimizeCloudinaryUrl(image, 100)})` }}
       />
+      
+      {/* Foreground Mockup */}
+      <div className="project-card-mockup-container">
+        <div className="project-card-mockup">
+          <div className="mockup-browser-bar">
+            <span className="mockup-dot red"></span>
+            <span className="mockup-dot yellow"></span>
+            <span className="mockup-dot green"></span>
+          </div>
+          <img src={optimizeCloudinaryUrl(image, 600)} alt={category || title} className="mockup-image" />
+        </div>
+      </div>
       
       {/* Header (Always Visible on Top) */}
       <div className="project-card-header">

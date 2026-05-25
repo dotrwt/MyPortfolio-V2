@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BorderGlow from '../../components/borderglow/borderglow.jsx';
+import { optimizeCloudinaryUrl } from '../../utils/cloudinary';
 
 const AboutSection = () => {
   return (
@@ -23,7 +24,7 @@ const AboutSection = () => {
         <div className="about-content-right">
           <div
             className="about-image-placeholder"
-            style={{ backgroundImage: 'url(https://res.cloudinary.com/dph28qrrx/image/upload/v1779532244/copy_of_dp_pn85e0.png)' }}
+            style={{ backgroundImage: `url(${optimizeCloudinaryUrl('https://res.cloudinary.com/dph28qrrx/image/upload/v1779532244/copy_of_dp_pn85e0.png', 600)})` }}
           ></div>
 
           <div className="about-button-wrapper">

@@ -287,7 +287,7 @@
   cursor: pointer;
 }
 
-.project-card-bg {
+.project-card-bg-blurred {
   position: absolute;
   top: 0;
   left: 0;
@@ -295,8 +295,13 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  transition: filter 0.6s cubic-bezier(0.33, 1, 0.68, 1), transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+  filter: blur(28px) brightness(0.28);
+  opacity: 0.8;
   z-index: 0;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 .project-card::after {
@@ -381,9 +386,74 @@
 }
 
 /* Hover triggers */
-.project-card:hover .project-card-bg {
-  transform: scale(1.05);
-  filter: blur(10px);
+.project-card:hover .project-card-bg-blurred {
+  transform: translate3d(0, 0, 0) scale(1.1);
+}
+
+/* Mockup Container and Frames */
+.project-card-mockup-container {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -44%, 0);
+  width: 84%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.project-card:hover .project-card-mockup-container {
+  transform: translate3d(-50%, -48%, 0) scale(1.04);
+}
+
+.project-card-mockup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85), 
+              0 0 0 1px rgba(255, 255, 255, 0.03);
+  transition: box-shadow 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.project-card:hover .project-card-mockup {
+  box-shadow: 0 40px 75px -15px rgba(0, 0, 0, 0.95), 
+              0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.mockup-browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  background-color: #1e1e1e;
+  padding: 0 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.mockup-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+
+.mockup-dot.red { background-color: #ff5f56; }
+.mockup-dot.yellow { background-color: #ffbd2e; }
+.mockup-dot.green { background-color: #27c93f; }
+
+.mockup-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
 
 .project-card:hover .icon-line.vertical {

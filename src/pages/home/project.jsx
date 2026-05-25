@@ -2,38 +2,33 @@ import React from 'react';
 import ProjectCard from '../../components/ProjectCard';
 import BorderGlow from '../../components/borderglow/borderglow.jsx';
 
-// Import local project assets
-import projectAbc from '../../assets/project_abc.png';
-import projectAllForOne from '../../assets/project_allforone.png';
-import projectTablet from '../../assets/project_tablet.png';
-
 const projects = [
   {
     id: 1,
     category: 'UniMap',
-    image: projectAbc,
-    description: "I provide creative leadership to ensure your brand's visuals, photography, and campaigns align beautifully with your identity.",
-    techStack: ['React', 'Figma'],
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779727951/UM__UI_fpvu1d.png',
+    description: "A student-focused campus navigation system designed to solve the problem of getting lost in large university campuses. It allows users to search for rooms using building names, floor numbers, landmarks, or digital identifiers and provides clear, structured directions for easy navigation.",
+    techStack: ['React', 'JS', 'Figma'],
     projectUrl: 'https://unimap-lemon.vercel.app/',
     githubUrl: 'https://github.com/dotrwt/unimap'
   },
   {
     id: 2,
-    category: 'Brand Strategy',
-    image: projectAllForOne,
-    description: "Developing comprehensive brand identities and positioning strategies that build emotional connection and establish market authority.",
-    techStack: ['Research', 'Brand Book', 'Copywriting'],
-    projectUrl: 'https://example.com/brand-strategy',
-    githubUrl: 'https://github.com'
+    category: 'Oak & Stay',
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779728047/OaP_UI_evsb0m.png',
+    description: "A property listing web app where users can discover and manage accommodations. Built as a learning project to get hands-on with full-stack development, auth, databases, image uploads, the works.",
+    techStack: ['EJS', 'Express', 'MongoDB', 'Cloudinary', 'JWT'],
+    projectUrl: 'https://rentalmarketplace.onrender.com/',
+    githubUrl: 'https://github.com/dotrwt/Oak-and-Stay'
   },
   {
     id: 3,
-    category: 'Digital',
-    image: projectTablet,
-    description: "High-fidelity digital experiences crafted with interaction, sleek animations, and custom layouts that keep users engaged.",
-    techStack: ['React', 'WebGL', 'GSAP'],
-    projectUrl: 'https://example.com/digital',
-    githubUrl: 'https://github.com'
+    category: 'Cinemyth',
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779728057/CN_UI_rcqi6o.png',
+    description: "A platform for people who think too much about movies. Goes beyond just listings or ratings it's about the stories, themes, and ideas that make films stick with you.",
+    techStack: ['React', 'TypeScript', 'Figma', 'TailwindCSS'],
+    projectUrl: 'https://cinemyth.vercel.app/',
+    githubUrl: 'https://github.com/dotrwt/Cinemyth'
   }
 ];
 
