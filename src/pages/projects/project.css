@@ -201,14 +201,21 @@
   transition: var(--transition-smooth);
 }
 
-.logo-cell svg {
+.logo-cell svg,
+.logo-cell img {
   max-width: 80%;
-  height: auto;
-  opacity: 0.25;
+  max-height: 50%;
+  object-fit: contain;
+  opacity: 0.45;
   transition: var(--transition-smooth);
 }
 
-.logo-cell:not(.empty):hover svg {
+.logo-cell img {
+  filter: grayscale(100%) brightness(1.4) contrast(1.2);
+}
+
+.logo-cell:not(.empty):hover svg,
+.logo-cell:not(.empty):hover img {
   opacity: 0.95;
   transform: scale(1.05);
 }
