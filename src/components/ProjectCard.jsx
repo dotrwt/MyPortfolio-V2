@@ -11,12 +11,14 @@ const ProjectCard = ({
   projectUrl, 
   githubUrl 
 }) => {
+  const hasImage = !!image;
+
   return (
     <div className="project-card">
       {/* Background Image (Blurred) */}
       <div 
         className="project-card-bg-blurred" 
-        style={{ backgroundImage: `url(${optimizeCloudinaryUrl(image, 100)})` }}
+        style={hasImage ? { backgroundImage: `url(${optimizeCloudinaryUrl(image, 100)})` } : { background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.05) 100%)' }}
       />
       
       {/* Foreground Mockup */}
@@ -27,7 +29,13 @@ const ProjectCard = ({
             <span className="mockup-dot yellow"></span>
             <span className="mockup-dot green"></span>
           </div>
-          <img src={optimizeCloudinaryUrl(image, 600)} alt={category || title} className="mockup-image" />
+          {hasImage ? (
+            <img src={optimizeCloudinaryUrl(image, 600)} alt={category || title} className="mockup-image" />
+          ) : (
+            <div className="mockup-placeholder-fallback">
+              <span className="placeholder-text">{category || title}</span>
+            </div>
+          )}
         </div>
       </div>
       

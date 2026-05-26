@@ -69,9 +69,7 @@ const ProjectSection = () => {
               key={proj.id}
               className="project-scroll-item sticky-card"
               style={{
-                position: 'sticky',
-                top: `calc(15vh + ${index * 80}px)`,
-                zIndex: index + 1
+                '--card-index': index
               }}
             >
               <ProjectCard

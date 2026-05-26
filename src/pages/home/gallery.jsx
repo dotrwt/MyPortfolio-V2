@@ -61,7 +61,7 @@ const galleryData = [
 
 const GallerySection = () => {
   return (
-    <section id="gallery" className="home-section" style={{ minHeight: '100vh', padding: '8rem 0', position: 'relative', zIndex: 1 }}>
+    <section id="gallery" className="home-section gallery-section">
       <div className="projects-grid">
 
         {/* Top Label */}
@@ -71,7 +71,7 @@ const GallerySection = () => {
         </div>
 
         {/* Masonry Grid */}
-        <div style={{ gridColumn: '2 / 8' }}>
+        <div className="gallery-grid-container">
           <div className="gallery-grid-main">
             {galleryData.map((column, colIdx) => (
               <div key={colIdx} className="gallery-col">

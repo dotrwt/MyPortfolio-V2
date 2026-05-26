@@ -589,6 +589,10 @@
   .stack-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .stack-target {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
