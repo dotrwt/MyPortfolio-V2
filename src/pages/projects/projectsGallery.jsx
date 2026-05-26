@@ -2,8 +2,6 @@ import React from 'react';
 import ProjectCard from '../../components/ProjectCard';
 import './project.css';
 
-import projectTablet from '../../assets/project_tablet.png';
-
 const projects = [
   {
     id: 1,
@@ -53,7 +51,7 @@ const projects = [
   {
     id: 6,
     category: 'Hexagon Travels - v3',
-    image: projectTablet,
+    image: '',
     description: "High-fidelity digital experiences crafted with interaction, sleek animations, and custom layouts that keep users engaged and tell a compelling product story.",
     techStack: ['React', 'WebGL', 'GSAP', 'CSS Grid'],
     projectUrl: 'https://example.com/digital',

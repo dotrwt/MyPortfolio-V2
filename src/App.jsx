@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import SmoothScroll from './components/SmoothScroll';
+import Preloader from './components/loader/Preloader';
 
 const Home = lazy(() => import('./pages/home/Home'));
 const AboutPage = lazy(() => import('./pages/about/AboutPage'));
@@ -37,19 +38,22 @@ function PageLoader() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <SmoothScroll>
-        <Suspense fallback={<PageLoader />}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </Suspense>
-      </SmoothScroll>
-    </BrowserRouter>
+    <>
+      <Preloader />
+      <BrowserRouter>
+        <SmoothScroll>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
+        </SmoothScroll>
+      </BrowserRouter>
+    </>
   );
 }

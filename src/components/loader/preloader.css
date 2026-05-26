@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-primary, #050505);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  overflow: hidden;
+}
+
+/* Film grain effect */
+.preloader-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.preloader-svg {
+  width: 500px;
+  max-width: 90vw;
+  height: auto;
+  z-index: 2;
+  overflow: visible;
+  /* Add a subtle glow to the whole SVG */
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.15));
+}
+
+.signature-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 140px;
+  fill: transparent;
+  stroke: var(--text-primary, #ffffff);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /* Cinematic motion blur ink effect */
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawText 1.5s cubic-bezier(0.45, 0, 0.15, 1) forwards, fillText 0.8s ease-in 1.0s forwards;
+}
+
+@keyframes drawText {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillText {
+  to {
+    fill: var(--text-primary, #ffffff);
+  }
+}

@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="footer-contact-grid">
           <div className="contact-col">
             <span className="label">Email</span>
-            <a href="mailto:harsh.r5983@gmail.com" className="contact-link">harsh.r5983@gmail.com</a>
+            <a href="mailto:harsh.dotrwt@gmail.com" className="contact-link">harsh.dotrwt@gmail.com</a>
           </div>
           <div className="contact-col">
             <span className="label">Call Me</span>
