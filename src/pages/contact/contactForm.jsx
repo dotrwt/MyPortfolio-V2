@@ -26,7 +26,10 @@ const ContactForm = () => {
 
     const result = await sendEmail({
       from_name: formData.name,
+      from_email: formData.email,
       reply_to: formData.email,
+      name: formData.name,
+      email: formData.email,
       message: formData.message,
     });
 

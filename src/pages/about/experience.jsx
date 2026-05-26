@@ -7,31 +7,31 @@ const Experience = () => {
       period: 'Apr 2026 - Present',
       company: 'Google Gemini',
       role: 'Campus Ambassador',
-      description: 'Spearhead the design direction and strategy for a range of cutting-edge products.'
+      description: "Building Google's AI dev community on campus through Gemini workshops and prompt engineering demos."
     },
     {
-      period: '2019 - 2021',
-      company: 'EFG Solutions',
-      role: 'Product Design Manager',
-      description: 'Managed a team of designers and coordinated design projects across multiple products.'
+      period: 'Jan 2026 - Present',
+      company: 'Atal Yuva Sansad',
+      role: 'Secretariat Member',
+      description: 'Supporting operations and coordination at a youth parliament in Gwalior, MP.'
     },
     {
       period: 'Sep 2025 - Nov 2025',
       company: 'Madhya Pradesh Youth Summit',
       role: 'Head of Photography',
-      description: 'Oversaw the entire product design lifecycle from concept to production.'
+      description: 'Directed a photography team across keynotes and panels, managing content selection and media delivery.'
     },
     {
       period: 'Jan 2025 - Jun 2025',
       company: 'Legatus Knowledge Services',
       role: 'Head of Photography',
-      description: 'Led a team of designers in creating visually appealing and functional product designs.'
+      description: 'Scaled team to 70+, set visual direction across 4+ events, delivered 500+ images per event in 48hrs.'
     },
     {
       period: 'Dec 2023 - Dec 2024',
       company: 'Legatus Knowledge Services',
       role: 'Head of Photography',
-      description: 'Collaborated with cross-functional teams to design and develop innovative products.'
+      description: 'Co-led a 55-person team, cut re-editing requests by 30%, promoted to Head within 13 months.'
     }
   ];
 
@@ -56,7 +56,7 @@ const Experience = () => {
               <div className="experience-description">
                 {exp.description}
               </div>
-              
+
               <div className="experience-row-divider">
                 <div className="divider-line"></div>
                 <div className="experience-target">

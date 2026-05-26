@@ -35,9 +35,9 @@ const Socials = () => {
     },
     {
       id: 'pinterest',
-      name: 'pintrest',
+      name: 'pinterest',
       handle: '@dotrwtt',
-      url: 'https://pintrest.com/dotrwtt',
+      url: 'https://pinterest.com/dotrwtt',
       icon: <FaPinterest size={20} />
     }
 
