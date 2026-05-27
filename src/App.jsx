@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react';
 import SmoothScroll from './components/SmoothScroll';
 import Preloader from './components/loader/Preloader';
 import PixelCat from './components/PixelCat/PixelCat';
+import { Analytics } from "@vercel/analytics/react"
 
 const Home = lazy(() => import('./pages/home/Home'));
 const AboutPage = lazy(() => import('./pages/about/AboutPage'));
@@ -56,6 +57,7 @@ export default function App() {
           <PixelCat />
         </SmoothScroll>
       </BrowserRouter>
+      <Analytics />
     </>
   );
 }
