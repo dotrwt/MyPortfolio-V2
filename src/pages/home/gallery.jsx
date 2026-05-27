@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BorderGlow from '../../components/borderglow/borderglow.jsx';
 import { optimizeCloudinaryUrl } from '../../utils/cloudinary';
 
@@ -92,9 +93,9 @@ const GallerySection = () => {
 
           <div className="gallery-button-wrapper">
             <BorderGlow borderRadius={0} backgroundColor="#000" glowRadius={30} className="btn-glow-wrapper">
-              <button className="gallery-btn">
+              <Link to="/gallery" className="gallery-btn">
                 view gallery ↗
-              </button>
+              </Link>
             </BorderGlow>
           </div>
         </div>

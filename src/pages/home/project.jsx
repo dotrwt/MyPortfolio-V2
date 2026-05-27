@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../../components/ProjectCard';
 import BorderGlow from '../../components/borderglow/borderglow.jsx';
 
@@ -54,9 +55,9 @@ const ProjectSection = () => {
             </p>
             <div className="projects-btn-group">
               <BorderGlow borderRadius={0} backgroundColor="#000" glowRadius={30} className="btn-glow-wrapper">
-                <button className="projects-btn">
+                <Link to="/projects" className="projects-btn">
                   all projects ↗
-                </button>
+                </Link>
               </BorderGlow>
             </div>
           </div>

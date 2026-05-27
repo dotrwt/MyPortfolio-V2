@@ -71,7 +71,7 @@ const Footer = () => {
             <div className="links-group">
               <div className="links-subgroup">
                 <Link to="/">Home</Link>
-                <Link to="/project">Work</Link>
+                <Link to="/projects">Work</Link>
               </div>
               <div className="links-subgroup">
                 <Link to="/about">About</Link>
