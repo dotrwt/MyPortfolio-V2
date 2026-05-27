@@ -47,36 +47,36 @@ const Stack = () => {
     {
       category: 'Web Development',
       items: [
-        { name: 'React', description: 'Modern Frontend Development', icon: reactIcon, level: 3 },
-        { name: 'HTML5', description: 'Structured Web Content', icon: htmlIcon, level: 3 },
-        { name: 'CSS3', description: 'Web Styling & Layouts', icon: cssIcon, level: 3 },
-        { name: 'Tailwind CSS', description: 'Utility-First Styling', icon: tailwindIcon, level: 3 },
-        { name: 'Vite', description: 'Fast Frontend Tooling', icon: viteIcon, level: 2 },
-        { name: 'React Router', description: 'Client-Side Routing', icon: routerIcon, level: 2 },
-        { name: 'Material UI', description: 'Component-Based UI Design', icon: muiIcon, level: 2 },
-        { name: 'Bootstrap', description: 'Responsive Web Components', icon: bootstrapIcon, level: 2 },
+        { name: 'React', icon: reactIcon, level: 3 },
+        { name: 'HTML5', icon: htmlIcon, level: 3 },
+        { name: 'CSS3', icon: cssIcon, level: 3 },
+        { name: 'Tailwind CSS', icon: tailwindIcon, level: 3 },
+        { name: 'Vite', icon: viteIcon, level: 2 },
+        { name: 'React Router', icon: routerIcon, level: 2 },
+        { name: 'Material UI', icon: muiIcon, level: 2 },
+        { name: 'Bootstrap', icon: bootstrapIcon, level: 2 },
       ]
     },
     {
       category: 'Backend, Database & Cloud',
       items: [
-        { name: 'Node.js', description: 'Server-Side JavaScript Runtime', icon: nodeIcon, level: 2 },
-        { name: 'Express.js', description: 'Backend API Development', icon: expressIcon, level: 2 },
-        { name: 'MongoDB', description: 'NoSQL Database Management', icon: mongoIcon, level: 3 },
-        { name: 'Firebase', description: 'Backend & Authentication Services', icon: firebaseIcon, level: 2 },
-        { name: 'Vercel', description: 'Frontend Deployment Platform', icon: vercelIcon, level: 2 },
-        { name: 'Render', description: 'Full Stack Deployment Services', icon: renderIcon, level: 1 },
-        { name: 'Cloudinary', description: 'Cloud Media Management', icon: cloudinaryIcon, level: 2 },
+        { name: 'Node.js', icon: nodeIcon, level: 2 },
+        { name: 'Express.js', icon: expressIcon, level: 2 },
+        { name: 'MongoDB', icon: mongoIcon, level: 3 },
+        { name: 'Firebase', icon: firebaseIcon, level: 2 },
+        { name: 'Vercel', icon: vercelIcon, level: 2 },
+        { name: 'Render', icon: renderIcon, level: 1 },
+        { name: 'Cloudinary', icon: cloudinaryIcon, level: 2 },
       ]
     },
     {
       category: 'Tools & Platforms',
       items: [
-        { name: 'Git', description: 'Version Control System', icon: gitIcon, level: 3 },
-        { name: 'GitHub', description: 'Code Collaboration & Hosting', icon: githubIcon, level: 3 },
-        { name: 'VS Code', description: 'Development Environment', icon: vsCodeIcon, level: 3 },
-        { name: 'Postman', description: 'API Testing & Debugging', icon: postmanIcon, level: 1 },
-        { name: 'Hoppscotch', description: 'Lightweight API Testing', icon: hoppscotchIcon, level: 3 },
+        { name: 'Git', icon: gitIcon, level: 3 },
+        { name: 'GitHub', icon: githubIcon, level: 3 },
+        { name: 'VS Code', icon: vsCodeIcon, level: 3 },
+        { name: 'Postman', icon: postmanIcon, level: 1 },
+        { name: 'Hoppscotch', icon: hoppscotchIcon, level: 3 },
       ]
     },
     {
@@ -123,7 +123,6 @@ const Stack = () => {
                           ))}
                         </div>
                       </div>
-                      <p className="stack-category">{item.description}</p>
                     </div>
 
                     <div className="stack-target">

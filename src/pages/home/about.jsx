@@ -16,16 +16,22 @@ const AboutSection = () => {
           </div>
 
           <p className="about-text">
-            I'm Harshvardhan <br /> a full stack developer, photographer, and creative mind passionate about building experiences that feel immersive, intentional, and memorable.
+            I'm Harshvardhan <br /> a <span className="highlight">full stack developer</span>, photographer, and creative mind passionate about building experiences that feel immersive, intentional, and memorable.
           </p>
         </div>
 
         {/* Right Side: Image Placeholder */}
         <div className="about-content-right">
-          <div
-            className="about-image-placeholder"
-            style={{ backgroundImage: `url(${optimizeCloudinaryUrl('https://res.cloudinary.com/dph28qrrx/image/upload/v1779532244/copy_of_dp_pn85e0.png', 600)})` }}
-          ></div>
+          <div className="about-image-wrapper">
+            <div
+              className="about-image-placeholder default-img"
+              style={{ backgroundImage: `url(${optimizeCloudinaryUrl('https://res.cloudinary.com/dph28qrrx/image/upload/v1779532244/copy_of_dp_pn85e0.png', 600)})` }}
+            ></div>
+            <div
+              className="about-image-placeholder hover-img"
+              style={{ backgroundImage: `url(${optimizeCloudinaryUrl('https://res.cloudinary.com/dph28qrrx/image/upload/v1779887305/pfp_krtsb4.png', 600)})` }}
+            ></div>
+          </div>
 
           <div className="about-button-wrapper">
             <BorderGlow borderRadius={0} backgroundColor="#000" glowRadius={30} className="btn-glow-wrapper">

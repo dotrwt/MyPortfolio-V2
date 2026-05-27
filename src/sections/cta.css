@@ -58,11 +58,13 @@
 
 .cta-glow-wrapper {
   display: inline-block;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease;
 }
 
 .cta-glow-wrapper:hover {
   transform: scale(1.04);
+  border-color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .cta-button {
@@ -73,7 +75,7 @@
   border: none;
   font-family: var(--font-mono);
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   transition: var(--transition-smooth);
   text-transform: lowercase;
   background: transparent;
@@ -81,6 +83,7 @@
 
 .cta-glow-wrapper:hover .cta-button {
   color: var(--text-primary);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 .cta-arrow {

@@ -195,6 +195,7 @@
   .hero-top-row {
     grid-column: 2 / 8;
   }
+
   .hero-title {
     font-size: clamp(2.8rem, 5.5vw, 4.5rem);
   }
@@ -311,8 +312,37 @@
   font-size: clamp(1.5rem, 2.5vw, 2.2rem);
   font-weight: 500;
   line-height: 1.5;
-  color: var(--text-primary);
+  color: rgba(255, 255, 255, 0.75);
   letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.about-text .highlight {
+  font-weight: 600;
+  position: relative;
+  display: inline;
+  background: linear-gradient(90deg, #ffffff 0%, #d4d4d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.about-text .highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ffffff, #888888);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-section:hover .about-text .highlight::after {
+  transform: scaleX(1);
 }
 
 .about-content-right {
@@ -323,14 +353,48 @@
   gap: 3rem;
 }
 
-.about-image-placeholder {
+.about-image-wrapper {
   width: 85%;
   max-width: 450px;
   aspect-ratio: 3 / 4;
+  position: relative;
+  overflow: hidden;
   background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.6s ease, box-shadow 0.6s ease;
+}
+
+.about-image-wrapper:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.about-image-placeholder {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
+
+.about-image-placeholder.default-img {
   filter: grayscale(100%) contrast(1.1);
+  opacity: 1;
+  z-index: 1;
+}
+
+.about-image-placeholder.hover-img {
+  filter: grayscale(0%) contrast(1.0);
+  opacity: 0;
+  z-index: 2;
+}
+
+.about-image-wrapper:hover .default-img {
+  opacity: 0;
+}
+
+.about-image-wrapper:hover .hover-img {
+  opacity: 1;
 }
 
 .about-button-wrapper,
@@ -347,11 +411,13 @@
 .btn-glow-wrapper {
   width: 100%;
   max-width: 250px;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease;
 }
 
 .btn-glow-wrapper:hover {
   transform: scale(1.04);
+  border-color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .about-me-btn,
@@ -362,7 +428,7 @@
   justify-content: center;
   padding: 1rem 3rem;
   background: transparent;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   border: none;
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -377,6 +443,7 @@
 .btn-glow-wrapper:hover .projects-btn,
 .btn-glow-wrapper:hover .gallery-btn {
   color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 .about-crosshair-decorative {
@@ -590,6 +657,7 @@
   .gallery-section {
     padding: 4rem var(--space-md);
   }
+
   .gallery-grid-container {
     grid-column: span 8;
     width: 100%;

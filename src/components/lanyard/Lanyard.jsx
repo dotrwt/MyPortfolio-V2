@@ -91,6 +91,27 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
   );
   const [dragged, drag] = useState(false);
   const [hovered, hover] = useState(false);
+  const [clickCount, setClickCount] = useState(0);
+  const [isFlipping, setIsFlipping] = useState(false);
+  const lastClickTime = useRef(0);
+
+  const handleCardClick = () => {
+    const now = Date.now();
+    if (now - lastClickTime.current < 400) {
+      const newCount = clickCount + 1;
+      setClickCount(newCount);
+      if (newCount >= 3) {
+        setIsFlipping(true);
+        setClickCount(0);
+        setTimeout(() => {
+          setIsFlipping(false);
+        }, 2000);
+      }
+    } else {
+      setClickCount(1);
+    }
+    lastClickTime.current = now;
+  };
 
   const [lineGeometry] = useState(() => new MeshLineGeometry());
   const [lineMaterial] = useState(() => {
@@ -145,7 +166,12 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
       lineMaterial.resolution.set(state.size.width, state.size.height);
       ang.copy(card.current.angvel());
       rot.copy(card.current.rotation());
-      card.current.setAngvel({ x: ang.x, y: ang.y - rot.y * 0.25, z: ang.z });
+      if (isFlipping) {
+        card.current.wakeUp();
+        card.current.setAngvel({ x: ang.x, y: 18, z: ang.z }, true);
+      } else {
+        card.current.setAngvel({ x: ang.x, y: ang.y - rot.y * 0.25, z: ang.z });
+      }
     }
   });
 
@@ -173,10 +199,11 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}
             onPointerUp={e => (e.target.releasePointerCapture(e.pointerId), drag(false))}
-            onPointerDown={e => (
-              e.target.setPointerCapture(e.pointerId),
-              drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())))
-            )}
+            onPointerDown={e => {
+              e.target.setPointerCapture(e.pointerId);
+              drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())));
+              handleCardClick();
+            }}
           >
             <mesh geometry={nodes.card.geometry}>
               <meshPhysicalMaterial

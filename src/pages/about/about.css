@@ -469,13 +469,13 @@
 .stack-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 80px 40px;
+  gap: 50px 40px;
 }
 
 .stack-item {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   position: relative;
 }
 
@@ -598,7 +598,7 @@
 @media (max-width: 600px) {
   .stack-grid {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 35px;
   }
 }
 

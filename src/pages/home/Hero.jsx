@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './home.css';
 
 const focusAreas = [
-  'digital stories', 
-  'software interfaces', 
-  'interactive experiences', 
+  'digital stories',
+  'software interfaces',
+  'interactive experiences',
   'cinematic interfaces'
 ];
 
@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="hero-title-container">
           <h1 className="hero-title">
             <span className="hero-title-line">a creative developer</span>
-            <span className="hero-title-line">partner with focus on</span>
+            <span className="hero-title-line">focused on</span>
             <span className="hero-title-line">
               <span key={focusIndex} className="hero-changing-word">{focusAreas[focusIndex]}</span>
             </span>

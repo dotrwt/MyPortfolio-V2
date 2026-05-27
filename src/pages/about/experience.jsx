@@ -30,7 +30,7 @@ const Experience = () => {
     {
       period: 'Dec 2023 - Dec 2024',
       company: 'Legatus Knowledge Services',
-      role: 'Head of Photography',
+      role: 'Deputy Head of Photography',
       description: 'Co-led a 55-person team, cut re-editing requests by 30%, promoted to Head within 13 months.'
     }
   ];

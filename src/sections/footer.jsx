@@ -39,24 +39,24 @@ const Footer = () => {
           </div>
           <div className="contact-col">
             <span className="label">Call Me</span>
-            <a href="/contact" className="contact-link">Book Now</a>
+            <Link to='/contact' className="contact-link">Book Now</Link>
           </div>
           <div className="contact-col">
             <span className="label">Social</span>
             <div className="social-icons">
-              <Magnet magnetStrength={3} padding={30}>
+              <Magnet magnetStrength={4} padding={15}>
                 <a href="https://x.com/dotrwt" className="social-icon" target="_blank"><FaXTwitter size={20} /></a>
               </Magnet>
-              <Magnet magnetStrength={3} padding={30}>
+              <Magnet magnetStrength={4} padding={15}>
                 <a href="https://www.instagram.com/rawwithharsh" className="social-icon" target="_blank"><FaInstagram size={20} /></a>
               </Magnet>
-              <Magnet magnetStrength={3} padding={30}>
+              <Magnet magnetStrength={4} padding={15}>
                 <a href="https://www.linkedin.com/in/harshvardhan-rawat" className="social-icon" target="_blank"><FaLinkedinIn size={20} /></a>
               </Magnet>
-              <Magnet magnetStrength={3} padding={30}>
+              <Magnet magnetStrength={4} padding={15}>
                 <a href="https://github.com/dotrwt" className="social-icon" target="_blank"><FaGithub size={20} /></a>
               </Magnet>
-              <Magnet magnetStrength={3} padding={30}>
+              <Magnet magnetStrength={4} padding={15}>
                 <a href="https://in.pinterest.com/dotrwtt" className="social-icon" target="_blank"><FaPinterest size={20} /></a>
               </Magnet>
             </div>

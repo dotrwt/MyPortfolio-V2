@@ -41,31 +41,13 @@ const projects = [
   },
   {
     id: 5,
-    category: 'Hexagon Travels - v2',
+    category: 'Hexagon Travels',
     image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779739460/HT_UI_jmbrgx.png',
     description: "A travel agency website built to provide seamless travel experiences to customers",
     techStack: ['HTML', 'CSS', 'JavaScript'],
     projectUrl: 'https://hexagontravels.com/',
     githubUrl: 'https://github.com/dotrwt/HexagonTravels-v2'
   },
-  {
-    id: 6,
-    category: 'Hexagon Travels - v3',
-    image: '',
-    description: "High-fidelity digital experiences crafted with interaction, sleek animations, and custom layouts that keep users engaged and tell a compelling product story.",
-    techStack: ['React', 'WebGL', 'GSAP', 'CSS Grid'],
-    projectUrl: 'https://example.com/digital',
-    githubUrl: 'https://github.com'
-  },
-  {
-    id: 7,
-    category: 'My Portfolio - v1',
-    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779739686/MP_UI_hcu1qt.png',
-    description: "First version of a portfolio website built to showcase my projects and skills",
-    techStack: ['HTML', 'CSS', 'JavaScript'],
-    projectUrl: 'https://harshvardhanrawat.dev',
-    githubUrl: 'https://github.com/dotrwt/MyPortfolio-V1'
-  }
 ];
 
 const ProjectsGallery = () => {

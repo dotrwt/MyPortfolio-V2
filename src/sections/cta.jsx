@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FiArrowUpRight } from 'react-icons/fi';
 import BorderGlow from '../components/borderglow/borderglow.jsx';
 import Magnet from '../components/magnet/magnet.jsx';
@@ -23,10 +24,10 @@ const CTA = () => {
           <div className="cta-button-container">
             <Magnet magnetStrength={3} padding={50}>
               <BorderGlow borderRadius={0} backgroundColor="#000" glowRadius={30} className="cta-glow-wrapper">
-                <a href="/contact" className="cta-button">
+                <Link to='/contact' className="cta-button">
                   <span>contact me</span>
                   <FiArrowUpRight className="cta-arrow" />
-                </a>
+                </Link>
               </BorderGlow>
             </Magnet>
           </div>
