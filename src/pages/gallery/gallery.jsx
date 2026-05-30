@@ -49,7 +49,7 @@ const galleryItems = [
   },
   {
     id: 12,
-    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779527168/IMG_3143_tnjk02.jpg'
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1780169471/IMG_9724_ccfa1d.jpg'
   },
   {
     id: 13,

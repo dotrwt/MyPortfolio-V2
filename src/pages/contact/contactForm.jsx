@@ -65,7 +65,7 @@ const ContactForm = () => {
               onChange={handleChange}
               autoComplete="off"
               required
-              placeholder="e.g. Jane Doe"
+              placeholder="e.g. Rohan Patel"
             />
           </div>
         </div>
@@ -84,7 +84,7 @@ const ContactForm = () => {
               onChange={handleChange}
               autoComplete="off"
               required
-              placeholder="jane@example.com"
+              placeholder="rohan@example.com"
             />
           </div>
         </div>
