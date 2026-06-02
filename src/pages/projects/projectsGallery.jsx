@@ -5,6 +5,23 @@ import './project.css';
 const projects = [
   {
     id: 1,
+    category: 'Zest Trading',
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1780427159/UI__11_nvg7cr.png',
+    description: 'A full-stack paper trading platform for managing virtual portfolios, executing simulated trades, and tracking market performance.',
+    techStack: [
+      'React',
+      'Vite',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+      'Tailwind CSS',
+    ],
+    projectUrl: 'https://zest-amber-psi.vercel.app/',
+    githubUrl: 'https://github.com/dotrwt/ZestTrading'
+  },
+  {
+    id: 2,
     category: 'UniMap',
     image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779727951/UM__UI_fpvu1d.png',
     description: "A campus navigation system designed to solve the problem of getting lost in large university campuses.",
@@ -13,7 +30,7 @@ const projects = [
     githubUrl: 'https://github.com/dotrwt/UniMap'
   },
   {
-    id: 2,
+    id: 3,
     category: 'Oak & Stay',
     image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779728047/OaP_UI_evsb0m.png',
     description: "A property listing web app where users can discover and manage accommodations. Built as a learning project.",
@@ -22,7 +39,7 @@ const projects = [
     githubUrl: 'https://github.com/dotrwt/Oak-and-Stay'
   },
   {
-    id: 3,
+    id: 4,
     category: 'Cinemyth',
     image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779728057/CN_UI_rcqi6o.png',
     description: "A platform for people who think too much about movies. Goes beyond just listings or ratings it's about the stories, themes, and ideas that make films stick with you.",
@@ -31,7 +48,7 @@ const projects = [
     githubUrl: 'https://github.com/dotrwt/Cinemyth'
   },
   {
-    id: 4,
+    id: 5,
     category: 'Atal Yuva Sansad',
     image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779739209/AYS_UI_n9rskn.png',
     description: "A youth parliament event held in Gwalior. Built to inform delegates about committees, agendas, and registration",
@@ -40,7 +57,7 @@ const projects = [
     githubUrl: 'https://github.com/dotrwt/AtalYuvaSansad'
   },
   {
-    id: 5,
+    id: 6,
     category: 'Hexagon Travels',
     image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779739460/HT_UI_jmbrgx.png',
     description: "A travel agency website built to provide seamless travel experiences to customers",
