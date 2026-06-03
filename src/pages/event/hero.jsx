@@ -1,7 +1,7 @@
 import React from 'react';
 import './event.css';
 
-const EventHero = ({ title, date, venue, description }) => {
+const EventHero = ({ title, date, venue }) => {
   return (
     <section className="event-hero">
       <div className="event-hero-content-grid">
@@ -20,7 +20,7 @@ const EventHero = ({ title, date, venue, description }) => {
           </div>
         </div>
 
-        {/* Details Meta and Description Grid */}
+        {/* Details Meta Grid */}
         <div className="event-hero-meta-grid slide-up">
           <div className="event-meta-column">
             <div className="event-meta-block">
@@ -31,10 +31,6 @@ const EventHero = ({ title, date, venue, description }) => {
               <span className="text-mono meta-label">venue</span>
               <span className="meta-value">{venue}</span>
             </div>
-          </div>
-          
-          <div className="event-description-column">
-            <p className="event-description-text">{description}</p>
           </div>
         </div>
       </div>

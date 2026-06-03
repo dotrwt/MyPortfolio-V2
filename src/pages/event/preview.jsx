@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import GalleryCard from '../../components/GalleryCard';
 import './event.css';
 
 const EventPreview = ({ images }) => {
+  const [columnCount, setColumnCount] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const w = window.innerWidth;
+      if (w < 600) {
+        setColumnCount(1);
+      } else if (w < 900) {
+        setColumnCount(2);
+      } else if (w < 1200) {
+        setColumnCount(3);
+      } else {
+        setColumnCount(4);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   if (!images || images.length === 0) return null;
 
-  // Split images into 4 columns for the offset layout
-  const columns = [[], [], [], []];
+  // Dynamically divide images into the active column count
+  const columns = Array.from({ length: columnCount }, () => []);
   images.forEach((image, index) => {
-    columns[index % 4].push(image);
+    columns[index % columnCount].push(image);
   });
 
   return (
@@ -19,11 +40,11 @@ const EventPreview = ({ images }) => {
           <div className="event-preview-line"></div>
         </div>
         
-        <div className="event-staggered-grid">
+        <div className={`event-staggered-grid cols-${columnCount}`}>
           {columns.map((columnImages, colIndex) => (
             <div key={colIndex} className="event-grid-column">
               {columnImages.map((image, imgIndex) => {
-                // Alternating portrait/landscape aspects
+                // Keep alternating aspect ratios based on layout indices
                 const isLandscape = (colIndex + imgIndex) % 2 === 0;
                 const aspectClass = isLandscape ? 'preview-landscape' : 'preview-portrait';
                 return (
