@@ -44,13 +44,12 @@ const EventPreview = ({ images }) => {
           {columns.map((columnImages, colIndex) => (
             <div key={colIndex} className="event-grid-column">
               {columnImages.map((image, imgIndex) => {
-                // Keep alternating aspect ratios based on layout indices
-                const isLandscape = (colIndex + imgIndex) % 2 === 0;
-                const aspectClass = isLandscape ? 'preview-landscape' : 'preview-portrait';
+                // Use the explicit aspect property to set the correct class
+                const aspectClass = image.aspect === 'landscape' ? 'preview-landscape' : 'preview-portrait';
                 return (
                   <GalleryCard 
                     key={imgIndex}
-                    image={image}
+                    image={image.url}
                     className={`event-preview-card ${aspectClass}`}
                   />
                 );

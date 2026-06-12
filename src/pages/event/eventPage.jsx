@@ -18,18 +18,18 @@ const EVENTS_DATA = {
         description: 'capturing dynamic keynotes, interactive panel discussions, and developer interactions at the annual Tech Summit. focusing on high-contrast black and white shadows, technological depth, and candid moments of collaboration.',
         driveLink: 'https://drive.google.com/drive/folders/1rmH7wALWHS1cOcav5_vqGmTwzSGYHeP-?usp=sharing',
         images: [
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779475609/IMG_0761_yrqqx8.jpg', // Image 1 [Landscape]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779477363/IMG_0603_2_kl72bc.jpg', // Image 2 [Portrait]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779475604/IMG_9644_bzsupp.jpg', // Image 3 [Landscape]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779476610/IMG_0943_mlplua.jpg', // Image 4 [Portrait]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779476596/IMG_0903_yfmby3.jpg', // Image 5 [Portrait]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779526523/IMG_0254_le0wym.jpg', // Image 6 [Landscape]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779475618/IMG_9403_qka83x.jpg', // Image 7 [Portrait]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779526530/IMG_0975_e2arux.jpg', // Image 8 [Landscape]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779476601/IMG_9821_pzhzfn.jpg', // Image 9 [Landscape]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779476612/IMG_9482_tckasd.jpg', // Image 10 [Portrait]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779527174/IMG_0656_chvp57.jpg', // Image 11 [Landscape]
-            'https://res.cloudinary.com/dph28qrrx/image/upload/v1780169471/IMG_9724_ccfa1d.jpg',  // Image 12 [Portrait]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1781274038/IMG_2818_tipknu.jpg', aspect: 'landscape' }, // Image 1 [Landscape]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1781274081/IMG_3109_xoykbs.jpg', aspect: 'portrait' }, // Image 2 [Portrait]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1781274060/IMG_3032_eoknh8.jpg', aspect: 'landscape' }, // Image 3 [Landscape]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1781274087/IMG_3102_s3hbip.jpg', aspect: 'portrait' }, // Image 4 [Portrait]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779476596/IMG_0903_yfmby3.jpg', aspect: 'portrait' }, // Image 5 [Portrait]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779526523/IMG_0254_le0wym.jpg', aspect: 'landscape' }, // Image 6 [Landscape]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779475618/IMG_9403_qka83x.jpg', aspect: 'portrait' }, // Image 7 [Portrait]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779526530/IMG_0975_e2arux.jpg', aspect: 'landscape' }, // Image 8 [Landscape]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779476601/IMG_9821_pzhzfn.jpg', aspect: 'landscape' }, // Image 9 [Landscape]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779476612/IMG_9482_tckasd.jpg', aspect: 'portrait' }, // Image 10 [Portrait]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779527174/IMG_0656_chvp57.jpg', aspect: 'landscape' }, // Image 11 [Landscape]
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1780169471/IMG_9724_ccfa1d.jpg', aspect: 'portrait' },  // Image 12 [Portrait]
         ]
     },
 };
