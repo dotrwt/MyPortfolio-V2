@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const useSEO = ({ title, description, canonicalUrl }) => {
+const useSEO = ({ title, description, canonicalUrl, image }) => {
   useEffect(() => {
     // 1. Update Title
     let formattedTitle = 'Harshvardhan Rawat (dotrwt) | Portfolio & Developer';
@@ -66,7 +66,17 @@ const useSEO = ({ title, description, canonicalUrl }) => {
     // 5. Update OG URL
     updateMeta('meta[property="og:url"]', currentUrl);
     updateMeta('meta[property="twitter:url"]', currentUrl);
-  }, [title, description, canonicalUrl]);
+
+    // 6. Update OG/Twitter Image
+    if (image) {
+      const fullImageUrl = image.startsWith('http')
+        ? image
+        : `${window.location.origin}${image.startsWith('/') ? '' : '/'}${image}`;
+      updateMeta('meta[property="og:image"]', fullImageUrl);
+      updateMeta('meta[property="twitter:image"]', fullImageUrl);
+      updateMeta('meta[name="twitter:image"]', fullImageUrl);
+    }
+  }, [title, description, canonicalUrl, image]);
 };
 
 export default useSEO;
