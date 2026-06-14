@@ -25,7 +25,8 @@ const ViewFullAlbum = ({ driveLink }) => {
         <div className="event-album-content">
           <h2 className="event-album-headline">
             want to view the full event gallery?<br />
-            explore all high-resolution digital files on drive.
+            drives will open soon! Stay Tuned for updates. <br />
+            {/* explore all high-resolution digital files on drive. */}
           </h2>
 
           <div className="event-album-button-container">
