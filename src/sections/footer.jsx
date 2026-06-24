@@ -77,6 +77,10 @@ const Footer = () => {
                 <Link to="/about">About</Link>
                 <Link to="/gallery">Gallery</Link>
               </div>
+              <div className="links-subgroup">
+                <Link to="/events">Events</Link>
+                <Link to="/404">404</Link>
+              </div>
             </div>
           </div>
           <div className="copyright-col">
