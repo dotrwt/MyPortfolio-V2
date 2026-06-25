@@ -10,7 +10,7 @@ const Experience = () => {
       description: "Building Google's AI dev community on campus through Gemini workshops and prompt engineering demos."
     },
     {
-      period: 'Jan 2026 - Present',
+      period: 'Jan 2026 - June 2026',
       company: 'Atal Yuva Sansad',
       role: 'Secretariat Member',
       description: 'Supporting operations and coordination at a youth parliament in Gwalior, MP.'
