@@ -13,6 +13,7 @@ const ProjectsPage = lazy(() => import('./pages/projects/ProjectsPage'));
 
 const NotFoundPage = lazy(() => import('./pages/notFound/notfoundPage'));
 const EventPage = lazy(() => import('./pages/event/eventPage'));
+const EventGalleryPage = lazy(() => import('./pages/event/eventGallery'));
 
 function PageLoader() {
   return (
@@ -52,7 +53,9 @@ export default function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/events" element={<EventGalleryPage />} />
               <Route path="/events/:eventSlug" element={<EventPage />} />
+              <Route path="/404" element={<NotFoundPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
