@@ -77,11 +77,11 @@ const projects = [
   {
     id: 7,
     category: 'Hexagon Travels',
-    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779739460/HT_UI_jmbrgx.png',
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1782986299/UI_smtieh.png',
     description: "A travel agency website built to provide seamless travel experiences to customers",
     techStack: ['HTML', 'CSS', 'JavaScript'],
     projectUrl: 'https://hexagontravels.com/',
-    githubUrl: 'https://github.com/dotrwt/HexagonTravels-v2'
+    githubUrl: 'https://github.com/dotrwt/HexagonTravels-v3'
   },
 ];
 
