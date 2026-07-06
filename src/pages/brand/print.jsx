@@ -9,6 +9,7 @@ const Print = () => {
       <img
         src={optimizeCloudinaryUrl("https://res.cloudinary.com/dph28qrrx/image/upload/v1783325315/printing_ffundz.png", 1200)}
         alt="Packaging and Print Specimen"
+        loading="lazy"
         style={{
           position: 'absolute',
           top: 0,

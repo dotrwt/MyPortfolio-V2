@@ -16,7 +16,8 @@ const Application = () => {
                     <div className="card-mockup" style={{ padding: 0, overflow: 'hidden', position: 'relative' }}>
                         <img 
                             src={optimizeCloudinaryUrl("https://res.cloudinary.com/dph28qrrx/image/upload/v1783326423/stampAppli_p5bqfq.png", 400)} 
-                            alt="Stamp Application Mockup" 
+                            alt="dotrwt brand stamp application card mockup" 
+                            loading="lazy"
                             style={{ 
                                 width: '100%', 
                                 height: '100%', 
@@ -29,7 +30,8 @@ const Application = () => {
                     <div className="card-mockup light" style={{ padding: 0, overflow: 'hidden', position: 'relative' }}>
                         <img 
                             src={optimizeCloudinaryUrl("https://res.cloudinary.com/dph28qrrx/image/upload/v1783327724/card_joy9gz.png", 400)} 
-                            alt="Visiting Card Mockup" 
+                            alt="dotrwt business card design mockup" 
+                            loading="lazy"
                             style={{ 
                                 width: '100%', 
                                 height: '100%', 
@@ -43,7 +45,8 @@ const Application = () => {
                         <div className="circular-stamp" style={{ border: 'none' }}>
                             <img
                                 src={optimizeCloudinaryUrl("https://res.cloudinary.com/dph28qrrx/image/upload/v1783321534/Stamp_s8z9qw.png", 200)}
-                                alt="Stamp"
+                                alt="dotrwt circular signature stamp mockup"
+                                loading="lazy"
                                 style={{
                                     width: '100%',
                                     height: '100%',
@@ -55,7 +58,12 @@ const Application = () => {
 
                         {/* Sticker Mockup */}
                         <div className="sticker-mockup">
-                            <img src="/logo.png" alt="logo" style={{ height: '30px', width: 'auto', objectFit: 'contain' }} />
+                            <img 
+                                src="/logo.png" 
+                                alt="dotrwt brand sticker logo" 
+                                loading="lazy"
+                                style={{ height: '30px', width: 'auto', objectFit: 'contain' }} 
+                            />
                         </div>
                     </div>
                 </div>

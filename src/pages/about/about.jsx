@@ -10,7 +10,7 @@ const AboutSection = () => {
           <div className="about-portrait-placeholder">
             <img
               src={optimizeCloudinaryUrl("https://res.cloudinary.com/dph28qrrx/image/upload/v1779475595/06_1_itqfzo.jpg")}
-              alt="Profile-Picture"
+              alt="Harshvardhan Rawat - Full Stack Developer and Designer"
               loading="lazy"
             />
           </div>

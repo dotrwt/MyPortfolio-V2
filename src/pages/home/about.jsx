@@ -26,10 +26,14 @@ const AboutSection = () => {
             <div
               className="about-image-placeholder default-img"
               style={{ backgroundImage: `url(${optimizeCloudinaryUrl('https://res.cloudinary.com/dph28qrrx/image/upload/v1779532244/copy_of_dp_pn85e0.png', 600)})` }}
+              role="img"
+              aria-label="Harshvardhan Rawat - Developer portrait silhouette illustration"
             ></div>
             <div
               className="about-image-placeholder hover-img"
               style={{ backgroundImage: `url(${optimizeCloudinaryUrl('https://res.cloudinary.com/dph28qrrx/image/upload/v1779887305/pfp_krtsb4.png', 600)})` }}
+              role="img"
+              aria-label="Harshvardhan Rawat - Headshot profile photograph"
             ></div>
           </div>
 

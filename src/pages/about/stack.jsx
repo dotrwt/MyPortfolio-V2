@@ -109,7 +109,7 @@ const Stack = () => {
                   <div key={index} className="stack-item">
                     <div className="stack-icon-wrapper">
                       {item.icon ? (
-                        <img src={item.icon} alt={item.name} className="stack-icon" />
+                        <img src={item.icon} alt={item.name} loading="lazy" className="stack-icon" />
                       ) : (
                         <div className="stack-icon-placeholder"></div>
                       )}

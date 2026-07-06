@@ -21,15 +21,15 @@ const Logos = () => {
         {/* Row 1 */}
         <div className="logo-cell empty"></div>
         <div className="logo-cell">
-          <img src={unimapLogo} alt="UNIMAP" className="logo-img" />
+          <img src={unimapLogo} alt="UNIMAP" loading="lazy" className="logo-img" />
         </div>
         <div className="logo-cell empty"></div>
         <div className="logo-cell">
-          <img src={cinemythLogo} alt="CINEMYTH" className="logo-img" />
+          <img src={cinemythLogo} alt="CINEMYTH" loading="lazy" className="logo-img" />
         </div>
         <div className="logo-cell empty"></div>
         <div className="logo-cell">
-          <img src={htLogo} alt="Hexagon Travels" className="logo-img" />
+          <img src={htLogo} alt="Hexagon Travels" loading="lazy" className="logo-img" />
         </div>
         <div className="logo-cell empty"></div>
         <div className="logo-cell empty"></div>
@@ -38,15 +38,15 @@ const Logos = () => {
         <div className="logo-cell empty"></div>
         <div className="logo-cell empty"></div>
         <div className="logo-cell">
-          <img src={aysLogo} alt="Atal Yuva Sansad" className="logo-img" />
+          <img src={aysLogo} alt="Atal Yuva Sansad" loading="lazy" className="logo-img" />
         </div>
         <div className="logo-cell empty"></div>
         <div className="logo-cell">
-          <img src={zestLogo} alt="ZEST" className="logo-img" />
+          <img src={zestLogo} alt="ZEST" loading="lazy" className="logo-img" />
         </div>
         <div className="logo-cell empty"></div>
         <div className="logo-cell">
-          <img src={oakastayLogo} alt="OAKaSTAY" className="logo-img" />
+          <img src={oakastayLogo} alt="OAKaSTAY" loading="lazy" className="logo-img" />
         </div>
         <div className="logo-cell empty"></div>
       </div>
