@@ -52,6 +52,7 @@ const Socials = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-item-row"
+            aria-label={`Follow Harshvardhan Rawat on ${item.name} (${item.handle})`}
           >
             {/* Left Box: Icon and Details */}
             <div className="social-item-content">

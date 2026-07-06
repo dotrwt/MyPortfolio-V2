@@ -1,0 +1,999 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Brand Page Container & General Styles */
+.brand-page-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Page Hero Header */
+.brand-page-header {
+    padding: 6rem 3rem 4rem 3rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.brand-page-meta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.brand-page-headline {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+    text-transform: lowercase;
+}
+
+/* Grid Layout */
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    border-top: 1px solid #D5D2C9;
+}
+
+/* Base Brand Cell Style (Light Theme by Default) */
+.brand-cell {
+    background-color: #F6F4EE;
+    color: #1E1E1E;
+    padding: 2.5rem;
+    border-right: 1px solid #D5D2C9;
+    border-bottom: 1px solid #D5D2C9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 520px;
+    height: 100%;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Cell Styles */
+.brand-cell.dark {
+    background-color: #0A0A0A;
+    color: #F6F4EE;
+    border-right: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+
+/* Cell Elements */
+.cell-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.cell-title {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #888888;
+}
+
+.brand-cell.dark .cell-title {
+    color: #666666;
+}
+
+.cell-corner-mark {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: #BBBBBB;
+}
+
+.brand-cell.dark .cell-corner-mark {
+    color: #444444;
+}
+
+.cell-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.cell-footer {
+    margin-top: 2rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: #888888;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.brand-cell.dark .cell-footer {
+    color: #555555;
+}
+
+/* ========================================================
+   CELL 1: Primary Logo Specifics
+   ======================================================== */
+.logo-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.logo-image-container {
+    margin-bottom: 0.5rem;
+}
+
+.logo-image {
+    height: 230px;
+    width: auto;
+    display: block;
+}
+
+.logo-main-text {
+    font-family: var(--font-display);
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: #1E1E1E;
+}
+
+.logo-subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #1E1E1E;
+    margin-bottom: 0.5rem;
+}
+
+.logo-separator {
+    width: 40px;
+    height: 1px;
+    background-color: #D5D2C9;
+}
+
+.logo-description {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555555;
+    max-width: 320px;
+}
+
+.logo-footer-subbrands {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.subbrand-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.subbrand-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-transform: none;
+    color: inherit;
+}
+
+.subbrand-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+/* ========================================================
+   CELL 2: Brand Mark Specifics
+   ======================================================== */
+.brand-mark-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.focus-frame-svg {
+    width: 90px;
+    height: 90px;
+}
+
+.symbol-system {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.symbol-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.symbol-svg-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E2DFD5;
+    border-radius: 4px;
+}
+
+.symbol-name {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1E1E1E;
+}
+
+.symbol-desc {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    color: #666666;
+}
+
+.dot-configurations {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #E2DFD5;
+}
+
+.dot-config-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dot-shape-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot-shape {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1E1E1E;
+}
+
+.dot-shape.outline {
+    background-color: transparent;
+    border: 1.5px solid #1E1E1E;
+}
+
+.dot-shape.precision {
+    position: relative;
+}
+
+.dot-shape.precision::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #1E1E1E;
+}
+
+.dot-shape.completion {
+    border: 1.5px dashed #1E1E1E;
+    background-color: transparent;
+}
+
+.dot-config-label {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+/* ========================================================
+   CELL 3: Applications Placeholders (Dark)
+   ======================================================== */
+.app-mockups-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.card-mockup {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    aspect-ratio: 1.75 / 1;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-mockup.light {
+    background-color: #F6F4EE;
+    color: #1E1E1E;
+    border-color: #E2DFD5;
+}
+
+.card-logo {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.card-name {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.card-role {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    color: #888888;
+}
+
+.card-contact {
+    margin-top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    color: #666666;
+}
+
+.circular-stamp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1.5px dashed #444444;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: rotateSlow 20s linear infinite;
+}
+
+.stamp-text {
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.15em;
+    color: #888888;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stamp-center {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes rotateSlow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sticker-mockup {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 30px;
+    padding: 0.3rem 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+    display: inline-block;
+    align-self: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(-3deg);
+    border: 1px solid #DDDDDD;
+}
+
+/* ========================================================
+   CELL 4: Color Palette & Typography
+   ======================================================== */
+.palette-display {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.colors-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.color-swatch-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.color-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #E2DFD5;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.color-swatch-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.color-swatch-name {
+    font-family: var(--font-sans);
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+
+.color-swatch-hex {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    color: #888888;
+}
+
+.typo-specimens {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-top: 1px solid #E2DFD5;
+    padding-top: 1.25rem;
+}
+
+.typo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.typo-title {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.typo-font-family {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+
+.typo-specimen-chars {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #555555;
+    word-break: break-all;
+}
+
+.typo-specimens .mono-specimen .typo-font-family,
+.typo-specimens .mono-specimen .typo-specimen-chars {
+    font-family: var(--font-mono);
+}
+
+/* ========================================================
+   CELL 5: Visual Elements
+   ======================================================== */
+.visuals-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dot-grid-placeholder {
+    height: 80px;
+    background-image: radial-gradient(#D5D2C9 1px, transparent 1px);
+    background-size: 12px 12px;
+    border: 1px solid #E2DFD5;
+    border-radius: 4px;
+}
+
+.crosshair-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border: 1px solid #E2DFD5;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.crosshair-item {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888888;
+}
+
+.crosshair-item::before,
+.crosshair-item::after {
+    content: '';
+    position: absolute;
+    background-color: #888888;
+}
+
+.crosshair-item.plus::before {
+    width: 12px;
+    height: 1px;
+}
+
+.crosshair-item.plus::after {
+    width: 1px;
+    height: 12px;
+}
+
+.crosshair-item.circle {
+    border: 1px solid #888888;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+
+.crosshair-item.bracket {
+    width: 16px;
+    height: 16px;
+}
+
+.crosshair-item.bracket::before {
+    content: '[';
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    left: 0;
+    position: absolute;
+}
+
+.crosshair-item.bracket::after {
+    content: ']';
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    right: 0;
+    position: absolute;
+}
+
+.meta-playbar {
+    background-color: #1E1E1E;
+    color: #F6F4EE;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+}
+
+.playbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.play-triangle {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid #F6F4EE;
+}
+
+.play-pause-btn {
+    display: flex;
+    gap: 2px;
+}
+
+.play-pause-btn span {
+    width: 2px;
+    height: 7px;
+    background-color: #F6F4EE;
+}
+
+/* ========================================================
+   CELL 6: Photography Style (Dark)
+   ======================================================== */
+.photo-strips-grid {
+    display: flex;
+    gap: 4px;
+    height: 260px;
+    background-color: #111111;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #222222;
+}
+
+.photo-strip-col {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #222222;
+    border-radius: 3px;
+    transition: flex-grow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+}
+
+.photo-strip-col:hover {
+    flex-grow: 1.8;
+}
+
+.photo-strip-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) contrast(1.2);
+    transition: filter 0.4s ease;
+    position: relative;
+}
+
+.photo-strip-col:hover .photo-strip-image-placeholder {
+    filter: grayscale(80%) contrast(1.1);
+}
+
+.photo-strip-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.8));
+}
+
+.photo-strip-overlay-label {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    pointer-events: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.photo-strip-col:hover .photo-strip-overlay-label {
+    writing-mode: horizontal-tb;
+    height: auto;
+    color: #ffffff;
+}
+
+.photo-labels-footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    color: #555555;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================================
+   CELL 7: Tone of Voice
+   ======================================================== */
+.tone-voice-body {
+    display: flex;
+    gap: 2rem;
+}
+
+.tone-attributes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.tone-attribute {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1E1E1E;
+}
+
+.tone-description-box {
+    flex: 1.2;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ========================================================
+   CELL 8: Brand Applications Row
+   ======================================================== */
+.brand-apps-row {
+    display: flex;
+    gap: 0.75rem;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.brand-app-item {
+    flex: 1;
+    min-width: 70px;
+    aspect-ratio: 1 / 1;
+    background-color: #EBE8DF;
+    border: 1px solid #D8D4C8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-app-item.dark {
+    background-color: #1E1E1E;
+    border-color: #2D2D2D;
+}
+
+.brand-app-notebook {
+    width: 44px;
+    height: 52px;
+    background-color: #151515;
+    border-radius: 2px 4px 4px 2px;
+    border-left: 3px solid #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.brand-app-notebook::before {
+    content: '[ . ]';
+    font-family: var(--font-mono);
+    font-size: 0.4rem;
+    color: #666666;
+}
+
+.brand-app-camera {
+    width: 48px;
+    height: 32px;
+    background-color: #1E1E1E;
+    border-radius: 4px;
+    border: 1px solid #444444;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-app-camera::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2.5px solid #444444;
+    background-color: #0A0A0A;
+}
+
+.brand-app-tape {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 6px solid #D5D2C9;
+    background-color: #F6F4EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.brand-app-tape::after {
+    content: 'dotrwt.';
+    font-family: var(--font-display);
+    font-size: 0.4rem;
+    font-weight: 800;
+    color: #1E1E1E;
+    transform: rotate(-15deg);
+}
+
+/* ========================================================
+   CELL 9: Packaging & Print (Dark)
+   ======================================================== */
+.packaging-container {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.envelope-placeholder {
+    flex: 1.2;
+    background-color: #151515;
+    border: 1px solid #282828;
+    border-radius: 4px;
+    padding: 1rem;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.envelope-string-lock {
+    width: 16px;
+    height: 16px;
+    background-color: #2D2D2D;
+    border: 1.5px solid #444444;
+    border-radius: 50%;
+    align-self: center;
+    position: relative;
+}
+
+.envelope-string-lock::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    background-color: #444444;
+    left: 50%;
+    top: 50%;
+}
+
+.envelope-label {
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.thankyou-card-placeholder {
+    flex: 1;
+    background-color: #050505;
+    border: 1px solid #1E1E1E;
+    border-radius: 2px;
+    padding: 1rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-sans);
+}
+
+.thankyou-text {
+    font-size: 0.55rem;
+    line-height: 1.5;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #888888;
+}
+
+.thankyou-logo {
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    color: #555555;
+    text-align: right;
+}
+
+.print-cell-container {
+    grid-column: span 2;
+}
+
+/* ========================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ======================================================== */
+@media (max-width: 1100px) {
+    .brand-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brand-cell:nth-child(2n) {
+        border-right: none;
+    }
+
+    .print-cell-container {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-grid {
+        grid-template-columns: 1fr;
+        border-left: none;
+        border-right: none;
+    }
+
+    .brand-cell {
+        border-right: none;
+        padding: 2rem 1.5rem;
+        min-height: auto;
+    }
+
+    .print-cell-container {
+        grid-column: auto;
+    }
+
+    .logo-main-text {
+        font-size: 3.5rem;
+    }
+
+    .photo-strips-grid {
+        height: 200px;
+    }
+
+    .tone-voice-body {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

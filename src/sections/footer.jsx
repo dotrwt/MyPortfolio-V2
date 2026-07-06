@@ -45,19 +45,19 @@ const Footer = () => {
             <span className="label">Social</span>
             <div className="social-icons">
               <Magnet magnetStrength={4} padding={15}>
-                <a href="https://x.com/dotrwt" className="social-icon" target="_blank"><FaXTwitter size={20} /></a>
+                <a href="https://x.com/dotrwt" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow dotrwt on Twitter/X"><FaXTwitter size={20} /></a>
               </Magnet>
               <Magnet magnetStrength={4} padding={15}>
-                <a href="https://www.instagram.com/rawwithharsh" className="social-icon" target="_blank"><FaInstagram size={20} /></a>
+                <a href="https://www.instagram.com/rawwithharsh" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow rawwithharsh on Instagram"><FaInstagram size={20} /></a>
               </Magnet>
               <Magnet magnetStrength={4} padding={15}>
-                <a href="https://www.linkedin.com/in/harshvardhan-rawat" className="social-icon" target="_blank"><FaLinkedinIn size={20} /></a>
+                <a href="https://www.linkedin.com/in/harshvardhan-rawat" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Connect with Harshvardhan Rawat on LinkedIn"><FaLinkedinIn size={20} /></a>
               </Magnet>
               <Magnet magnetStrength={4} padding={15}>
-                <a href="https://github.com/dotrwt" className="social-icon" target="_blank"><FaGithub size={20} /></a>
+                <a href="https://github.com/dotrwt" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow dotrwt on GitHub"><FaGithub size={20} /></a>
               </Magnet>
               <Magnet magnetStrength={4} padding={15}>
-                <a href="https://in.pinterest.com/dotrwtt" className="social-icon" target="_blank"><FaPinterest size={20} /></a>
+                <a href="https://in.pinterest.com/dotrwtt" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow dotrwtt on Pinterest"><FaPinterest size={20} /></a>
               </Magnet>
             </div>
           </div>
@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
               <div className="links-subgroup">
                 <Link to="/events">Events</Link>
-                <Link to="/404">404</Link>
+                <Link to="/brand">Brand</Link>
               </div>
             </div>
           </div>

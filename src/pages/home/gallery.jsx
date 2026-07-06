@@ -9,17 +9,20 @@ const galleryData = [
     {
       id: 1,
       ratio: '4/3',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475595/KAPI_Konica_260322105443697_ipftpb.jpg'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475595/KAPI_Konica_260322105443697_ipftpb.jpg',
+      alt: 'Konica vintage film camera aesthetic photo'
     },
     {
       id: 2,
       ratio: '1/1',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475614/Snapchat-863945398_zqrast.jpg'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475614/Snapchat-863945398_zqrast.jpg',
+      alt: 'Moody outdoor portrait photography with warm sunset tones'
     },
     {
       id: 3,
       ratio: '1/1',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476606/Screenshot_2023-09-01_205101_u3wxae.png'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476606/Screenshot_2023-09-01_205101_u3wxae.png',
+      alt: '3D digital abstract model rendering'
     },
   ],
   // Column 2
@@ -27,17 +30,20 @@ const galleryData = [
     {
       id: 4,
       ratio: '1/1',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475603/Picsart_26-03-07_20-29-08-063_mt2peo.jpg'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475603/Picsart_26-03-07_20-29-08-063_mt2peo.jpg',
+      alt: 'Abstract experimental graphic design art'
     },
     {
       id: 5,
       ratio: '1/1',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475602/20230626203800_IMG_1688_xh0kjt.jpg'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475602/20230626203800_IMG_1688_xh0kjt.jpg',
+      alt: 'Architectural geometry and shadow details photography'
     },
     {
       id: 6,
       ratio: '1/1',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476609/Copy_of_20260307_063759_rcqcga.jpg'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476609/Copy_of_20260307_063759_rcqcga.jpg',
+      alt: 'Urban street photography in monochrome color scheme'
     },
   ],
   // Column 3
@@ -45,17 +51,20 @@ const galleryData = [
     {
       id: 7,
       ratio: '1/1',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475997/IMG_2401_ialvfh.jpg'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475997/IMG_2401_ialvfh.jpg',
+      alt: 'Minimalist shadow of leaves cast against a sunny wall'
     },
     {
       id: 8,
       ratio: '1/1',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475601/IMG_20260117_155036664_fext1f.jpg'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779475601/IMG_20260117_155036664_fext1f.jpg',
+      alt: 'Silhouette of modern buildings in late afternoon sun'
     },
     {
       id: 9,
       ratio: '4/3',
-      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476607/20230702181702_IMG_2509_pefbny.jpg'
+      image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779476607/20230702181702_IMG_2509_pefbny.jpg',
+      alt: 'Macro photograph of raindrops on green leaf texture'
     },
   ]
 ];
@@ -84,6 +93,8 @@ const GallerySection = () => {
                       aspectRatio: item.ratio,
                       backgroundImage: `url(${optimizeCloudinaryUrl(item.image) || `https://picsum.photos/seed/${item.id * 15}/600/800`})`
                     }}
+                    role="img"
+                    aria-label={item.alt}
                   >
                   </div>
                 ))}

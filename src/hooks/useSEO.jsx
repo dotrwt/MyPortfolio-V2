@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 
-const useSEO = ({ title, description, canonicalUrl, image }) => {
+const useSEO = ({ title, description, canonicalUrl, image, robots }) => {
   useEffect(() => {
     // 1. Update Title
     let formattedTitle = 'Harshvardhan Rawat (dotrwt) | Portfolio & Developer';
     if (title) {
       const lowerTitle = title.toLowerCase().trim();
       if (lowerTitle === 'home') {
-        formattedTitle = 'Home - dotrwt | Harshvardhan Rawat';
+        formattedTitle = 'Harshvardhan Rawat (dotrwt) | Portfolio & Full-Stack Developer';
       } else if (lowerTitle === 'about' || lowerTitle === 'about / bio') {
         formattedTitle = 'about - dotrwt | Harshvardhan Rawat';
       } else if (lowerTitle === 'projects' || lowerTitle === 'work & selected projects') {
@@ -53,7 +53,8 @@ const useSEO = ({ title, description, canonicalUrl, image }) => {
 
     // 4. Update Canonical Link
     let canonical = document.querySelector('link[rel="canonical"]');
-    const currentUrl = canonicalUrl || window.location.href;
+    const cleanUrl = window.location.origin + window.location.pathname;
+    const currentUrl = canonicalUrl || cleanUrl;
     if (canonical) {
       canonical.setAttribute('href', currentUrl);
     } else {
@@ -76,7 +77,10 @@ const useSEO = ({ title, description, canonicalUrl, image }) => {
       updateMeta('meta[property="twitter:image"]', fullImageUrl);
       updateMeta('meta[name="twitter:image"]', fullImageUrl);
     }
-  }, [title, description, canonicalUrl, image]);
+
+    // 7. Update Robots
+    updateMeta('meta[name="robots"]', robots || 'index, follow');
+  }, [title, description, canonicalUrl, image, robots]);
 };
 
 export default useSEO;
