@@ -3,6 +3,7 @@ import Navbar from '../../sections/navbar';
 import Footer from '../../sections/footer';
 import GridBackground from '../../components/GridBackground';
 import useSEO from '../../hooks/useSEO';
+import LazyRender from '../../components/LazyRender';
 
 // Sub-components
 import Hero from './hero';
@@ -12,7 +13,6 @@ import Design from './design';
 import Visuals from './visuals';
 import Photography from './photography';
 import ToneVoice from './toneVoice';
-import BrandApplications from './brandApplications';
 import Print from './print';
 
 // Styles
@@ -38,13 +38,12 @@ const BrandPage = () => {
         <div className="brand-grid">
           <Hero />
           <BrandMark />
-          <Application />
-          <Design />
-          <Visuals />
-          <Photography />
-          <ToneVoice />
-          <BrandApplications />
-          <Print />
+          <LazyRender><Application /></LazyRender>
+          <LazyRender><Design /></LazyRender>
+          <LazyRender><Visuals /></LazyRender>
+          <LazyRender><Photography /></LazyRender>
+          <LazyRender><ToneVoice /></LazyRender>
+          <LazyRender className="print-cell-container"><Print /></LazyRender>
         </div>
       </main>
       

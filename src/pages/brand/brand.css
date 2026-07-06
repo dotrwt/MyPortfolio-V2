@@ -431,7 +431,7 @@
     background-color: #ffffff;
     color: #000000;
     border-radius: 30px;
-    padding: 0.5rem 1.25rem;
+    padding: 0.3rem 0.5rem;
     font-family: var(--font-display);
     font-weight: 800;
     font-size: 1rem;
@@ -943,6 +943,10 @@
     text-align: right;
 }
 
+.print-cell-container {
+    grid-column: span 2;
+}
+
 /* ========================================================
    RESPONSIVE DESIGN BREAKPOINTS
    ======================================================== */
@@ -953,6 +957,10 @@
 
     .brand-cell:nth-child(2n) {
         border-right: none;
+    }
+
+    .print-cell-container {
+        grid-column: span 1;
     }
 }
 
@@ -967,6 +975,10 @@
         border-right: none;
         padding: 2rem 1.5rem;
         min-height: auto;
+    }
+
+    .print-cell-container {
+        grid-column: auto;
     }
 
     .logo-main-text {
