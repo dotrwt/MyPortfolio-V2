@@ -64,6 +64,8 @@ const Navbar = () => {
           <Link to="/projects" className="nav-link" onClick={() => setIsOpen(false)}>projects</Link>
           <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>about</Link>
           <Link to="/gallery" className="nav-link" onClick={() => setIsOpen(false)}>gallery</Link>
+          <Link to="/events" className="nav-link" onClick={() => setIsOpen(false)}>events</Link>
+          <Link to="/brand" className="nav-link" onClick={() => setIsOpen(false)}>brand</Link>
           <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>contact</Link>
         </div>
         {/* Scroll Progress Indicator Line */}

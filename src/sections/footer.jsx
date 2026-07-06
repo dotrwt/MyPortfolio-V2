@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
               <div className="links-subgroup">
                 <Link to="/events">Events</Link>
-                <Link to="/404">404</Link>
+                <Link to="/brand">Brand</Link>
               </div>
             </div>
           </div>

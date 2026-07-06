@@ -55,6 +55,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 520px;
+    height: 100%;
     position: relative;
     transition: background-color 0.3s ease;
 }
