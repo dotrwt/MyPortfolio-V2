@@ -9,6 +9,28 @@ import './event.css';
 
 // Centralized EVENTS_DATA with live events and high-res cover photos
 export const EVENTS_DATA = {
+    'aarunya': {
+        title: 'Aarunya 2026',
+        date: '21.02.2026 - 23.02.2026',
+        venue: "Madhav Institute of Technology and Science, Gwalior",
+        driveLink: 'https://drive.google.com/drive/folders/1v3PA79GtmBpm4RvjoW4p6jKE8aiv6G6n?usp=drive_link',
+        coverImage: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499698/Picsart_26-02-22_11-26-16-397_pp4hwj.jpg',
+        description: 'Capturing the vibrant energy, diplomatic debates, and youth leadership at Gwalior\'s premier student parliament.',
+        images: [
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499354/IMG_0881_n40gzt.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499389/IMG_0761_ydu41a.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499420/IMG_0917_xxnrqc.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499447/IMG_0254_lhzxzm.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499512/IMG_0656_rbdxew.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499480/IMG_0900_cv89xy.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499560/IMG_9644_ss32xt.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499833/IMG_0938_ua1lhd.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499590/IMG_9821_inhydu.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499595/IMG_9403_lnvkww.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499608/IMG_9474_zlotch.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499636/IMG_0215_uimwc1.jpg', aspect: 'portrait' },
+        ]
+    },
     'ays': {
         title: 'Atal Yuva Sansad',
         date: '12.06.2026 - 14.06.2026',

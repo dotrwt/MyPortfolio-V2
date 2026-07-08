@@ -59,11 +59,4 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Atal Yuva Sansad Event Detail -->
-  <url>
-    <loc>https://dotrwt.in/events/ays</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
 </urlset>
