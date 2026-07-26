@@ -9,26 +9,25 @@ import './event.css';
 
 // Centralized EVENTS_DATA with live events and high-res cover photos
 export const EVENTS_DATA = {
-    'aarunya': {
-        title: 'Aarunya 2026',
-        date: '21.02.2026 - 23.02.2026',
-        venue: "Madhav Institute of Technology and Science, Gwalior",
-        driveLink: 'https://drive.google.com/drive/folders/1v3PA79GtmBpm4RvjoW4p6jKE8aiv6G6n?usp=drive_link',
-        coverImage: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499698/Picsart_26-02-22_11-26-16-397_pp4hwj.jpg',
-        description: 'Capturing the vibrant energy, diplomatic debates, and youth leadership at Gwalior\'s premier student parliament.',
+    'dsk': {
+        title: 'Drishtikon',
+        date: '25.07.2026 - 26.07.2026',
+        venue: "G.D. Goenka Public School, Gwalior",
+        driveLink: 'https://drive.google.com/drive/folders/1cdBIR7jw8XXFV68gaydJspHmYuNV9JOK?usp=sharing',
+        coverImage: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785046632/IMG_5649_roxnym.jpg',
         images: [
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499354/IMG_0881_n40gzt.jpg', aspect: 'landscape' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499389/IMG_0761_ydu41a.jpg', aspect: 'portrait' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499420/IMG_0917_xxnrqc.jpg', aspect: 'landscape' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499447/IMG_0254_lhzxzm.jpg', aspect: 'portrait' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499512/IMG_0656_rbdxew.jpg', aspect: 'portrait' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499480/IMG_0900_cv89xy.jpg', aspect: 'landscape' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499560/IMG_9644_ss32xt.jpg', aspect: 'portrait' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499833/IMG_0938_ua1lhd.jpg', aspect: 'landscape' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499590/IMG_9821_inhydu.jpg', aspect: 'landscape' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499595/IMG_9403_lnvkww.jpg', aspect: 'portrait' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499608/IMG_9474_zlotch.jpg', aspect: 'landscape' },
-            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499636/IMG_0215_uimwc1.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785046858/IMG_4860_cim3gl.jpg   ', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785056129/IMG_5474_flzssb.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785047477/IMG_5673_gylrzr.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785056218/IMG_4901_geo31a.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785047244/IMG_5103_dtubog.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785047566/IMG_5610_x4l4gt.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785056372/IMG_5516_pgavy2.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785048111/IMG_5081_iskbxn.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785047415/IMG_5116_akfdtl.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785056488/IMG_5506_fvypd9.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785048396/IMG_5182_ezpqb8.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1785047352/IMG_5118_enpysd.jpg', aspect: 'portrait' },
         ]
     },
     'ays': {
@@ -52,6 +51,28 @@ export const EVENTS_DATA = {
             { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1781369974/IMG_3283_vcwal1.jpg', aspect: 'portrait' },
             { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1781369840/IMG_3664_syyka5.jpg', aspect: 'landscape' },
             { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1781369436/IMG_3638_jjuth5.jpg', aspect: 'portrait' },
+        ]
+    },
+    'aarunya': {
+        title: 'Aarunya 2026',
+        date: '21.02.2026 - 23.02.2026',
+        venue: "Madhav Institute of Technology and Science, Gwalior",
+        driveLink: 'https://drive.google.com/drive/folders/1v3PA79GtmBpm4RvjoW4p6jKE8aiv6G6n?usp=drive_link',
+        coverImage: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499698/Picsart_26-02-22_11-26-16-397_pp4hwj.jpg',
+        description: 'Capturing the vibrant energy, diplomatic debates, and youth leadership at Gwalior\'s premier student parliament.',
+        images: [
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499354/IMG_0881_n40gzt.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499389/IMG_0761_ydu41a.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499420/IMG_0917_xxnrqc.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499447/IMG_0254_lhzxzm.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499512/IMG_0656_rbdxew.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499480/IMG_0900_cv89xy.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499560/IMG_9644_ss32xt.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499833/IMG_0938_ua1lhd.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499590/IMG_9821_inhydu.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499595/IMG_9403_lnvkww.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499608/IMG_9474_zlotch.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1783499636/IMG_0215_uimwc1.jpg', aspect: 'portrait' },
         ]
     },
 };
