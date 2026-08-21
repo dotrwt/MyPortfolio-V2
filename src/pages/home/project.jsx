@@ -7,30 +7,47 @@ const projects = [
   {
     id: 1,
     category: 'UniMap',
-    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779727951/UM__UI_fpvu1d.png',
-    description: "A student-focused campus navigation system designed to solve the problem of getting lost in large university campuses. It allows users to search for rooms using building names, floor numbers, landmarks, or digital identifiers and provides clear, structured directions for easy navigation.",
-    techStack: ['React', 'JavaScript', 'Figma', 'Vercel'],
-    projectUrl: 'https://unimap-lemon.vercel.app/',
-    githubUrl: 'https://github.com/dotrwt/unimap'
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1786899363/Screenshot_2026-08-16_222429_l4skuh.png',
+    description: "A campus navigation system designed to solve the problem of getting lost in large university campuses.",
+    techStack: ['React', 'TypeScript', 'Framer', 'Vercel'],
+    projectUrl: 'https://unimap.dotrwt.in',
+    githubUrl: 'https://github.com/dotrwt/UniMap-V2'
   },
   {
     id: 2,
-    category: 'Oak & Stay',
-    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779728047/OaP_UI_evsb0m.png',
-    description: "A property listing web app where users can discover and manage accommodations. Built as a learning project to get hands-on with full-stack development, auth, databases, image uploads, the works.",
-    techStack: ['EJS', 'Express', 'MongoDB', 'Cloudinary', 'Render'],
-    projectUrl: 'https://rentalmarketplace.onrender.com/',
-    githubUrl: 'https://github.com/dotrwt/Oak-and-Stay'
+    category: 'Zest Trading',
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1780427159/UI__11_nvg7cr.png',
+    description: 'A full-stack paper trading platform for managing virtual portfolios, executing simulated trades, and tracking market performance.',
+    techStack: [
+      'React',
+      'Vite',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+      'Tailwind CSS',
+    ],
+    projectUrl: 'https://zest-amber-psi.vercel.app/',
+    githubUrl: 'https://github.com/dotrwt/ZestTrading'
   },
   {
     id: 3,
-    category: 'Cinemyth',
-    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/f_auto,q_auto/v1779728057/CN_UI_rcqi6o.png',
-    description: "A platform for people who think too much about movies. Goes beyond just listings or ratings it's about the stories, themes, and ideas that make films stick with you.",
-    techStack: ['React', 'TypeScript', 'Figma', 'TailwindCSS', 'Vercel'],
-    projectUrl: 'https://cinemyth.vercel.app/',
-    githubUrl: 'https://github.com/dotrwt/Cinemyth'
-  }
+    category: 'Vasundhara',
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1787293564/Screenshot_2026-08-21_115523_iu4xgj.png',
+    description: 'Vasundhara is a land registry and auditing portal that simplifies enrolling citizens, managing land records, and generating audit reports — all in one place.',
+    techStack: [
+      'React',
+      'Vite',
+      'TypeScript',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+      'Tailwind CSS',
+    ],
+    projectUrl: 'https://vlms.dotrwt.in/',
+    githubUrl: 'https://github.com/dotrwt/Vasundhara'
+  },
 ];
 
 const ProjectSection = () => {

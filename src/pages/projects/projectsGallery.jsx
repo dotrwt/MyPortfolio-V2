@@ -5,21 +5,12 @@ import './project.css';
 const projects = [
   {
     id: 1,
-    category: 'Vasundhara',
-    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1782326136/Screenshot_2026-06-25_000007_az6tsc.png',
-    description: 'Vasundhara is a land registry and auditing portal that simplifies enrolling citizens, managing land records, and generating audit reports — all in one place.',
-    techStack: [
-      'React',
-      'Vite',
-      'TypeScript',
-      'Node.js',
-      'Express',
-      'MongoDB',
-      'JWT',
-      'Tailwind CSS',
-    ],
-    projectUrl: 'https://vlms.dotrwt.in/',
-    githubUrl: 'https://github.com/dotrwt/Vasundhara'
+    category: 'UniMap',
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1786899363/Screenshot_2026-08-16_222429_l4skuh.png',
+    description: "A campus navigation system designed to solve the problem of getting lost in large university campuses.",
+    techStack: ['React', 'TypeScript', 'Framer', 'Vercel'],
+    projectUrl: 'https://unimap.dotrwt.in',
+    githubUrl: 'https://github.com/dotrwt/UniMap-V2'
   },
   {
     id: 2,
@@ -40,12 +31,21 @@ const projects = [
   },
   {
     id: 3,
-    category: 'UniMap',
-    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1779727951/UM__UI_fpvu1d.png',
-    description: "A campus navigation system designed to solve the problem of getting lost in large university campuses.",
-    techStack: ['React', 'JavaScript', 'Figma', 'Vercel'],
-    projectUrl: 'https://unimap-lemon.vercel.app/',
-    githubUrl: 'https://github.com/dotrwt/UniMap'
+    category: 'Vasundhara',
+    image: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1787293564/Screenshot_2026-08-21_115523_iu4xgj.png',
+    description: 'Vasundhara is a land registry and auditing portal that simplifies enrolling citizens, managing land records, and generating audit reports — all in one place.',
+    techStack: [
+      'React',
+      'Vite',
+      'TypeScript',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+      'Tailwind CSS',
+    ],
+    projectUrl: 'https://vlms.dotrwt.in/',
+    githubUrl: 'https://github.com/dotrwt/Vasundhara'
   },
   {
     id: 4,
