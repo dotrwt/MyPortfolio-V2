@@ -6,9 +6,29 @@ import Footer from '../../sections/footer';
 import useSEO from '../../hooks/useSEO';
 import { optimizeCloudinaryUrl } from '../../utils/cloudinary';
 import './event.css';
-
 // Centralized EVENTS_DATA with live events and high-res cover photos
 export const EVENTS_DATA = {
+    'twt': {
+        title: 'Weekend Theory - Yappers Club',
+        date: '30.08.2026',
+        venue: "Posham Pa Cafe, Gwalior",
+        driveLink: 'https://drive.google.com/drive/folders/1m9Nx2K9yVYIG0zB_jTO5JCok3xdLXg23?usp=sharing',
+        coverImage: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112487/09_riawgb.jpg ',
+        images: [
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112491/01_hcb2ge.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112493/03_hymoou.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112486/04_syutj7.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112489/06_osnzns.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788113037/IMG_7261_nr3vrc.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112498/02_xvnsiw.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788113175/IMG_7287_ezdm03.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112498/07_kxn57v.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112487/09_riawgb.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788113052/IMG_7243_m6gzct.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112499/08_thrq79.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1788112951/IMG_7263_uxqtyi.jpg', aspect: 'portrait' },
+        ]
+    },
     'dsk': {
         title: 'Drishtikon',
         date: '25.07.2026 - 26.07.2026',
