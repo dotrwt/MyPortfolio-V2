@@ -8,6 +8,27 @@ import { optimizeCloudinaryUrl } from '../../utils/cloudinary';
 import './event.css';
 // Centralized EVENTS_DATA with live events and high-res cover photos
 export const EVENTS_DATA = {
+    'bhajmanbeats': {
+        title: 'Bhajman Beats',
+        date: '27.09.2026',
+        venue: "Madhav Institute of Technology and Science, Gwalior",
+        driveLink: 'https://drive.google.com/drive/folders/1rKexqfMTo9Jcvw_sNPNYsdx58UwyvFby?usp=sharing',
+        coverImage: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303259/IMG_9435_zz1fjb.jpg ',
+        images: [
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303213/IMG_9603_puxir5.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303324/IMG_9431_nd7dfc.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303259/IMG_9435_zz1fjb.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303338/IMG_9698_qybd8v.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303417/IMG_9413_rq7uc5.jpg', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303364/IMG_9772_ihsi8s.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303459/IMG_1397_mrbuvz.heic', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303464/IMG_9675_qiuwd6.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303737/IMG_9873_fnrotp.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303569/IMG_1428_whv9pe.heic', aspect: 'portrait' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303573/IMG_9416_wczxxv.jpg', aspect: 'landscape' },
+            { url: 'https://res.cloudinary.com/dph28qrrx/image/upload/v1791303574/IMG_9630_rdkn8n.jpg', aspect: 'portrait' },
+        ]
+    },
     'twt': {
         title: 'Weekend Theory - Yappers Club',
         date: '30.08.2026',
